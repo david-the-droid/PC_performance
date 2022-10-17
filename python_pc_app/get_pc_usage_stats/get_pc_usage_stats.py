@@ -5,9 +5,9 @@ def get_pc_dataframe():
     """
     Returns a pandas dataframe of PC stats
     """
-    with open('OpenHardwareMonitorLog-2022-09-17.csv', 'r') as fin:
+    with open('../OpenHardwareMonitorLog-2022-09-17.csv', 'r') as fin:
         data = fin.read().splitlines(True)
-    with open('OpenHardwareMonitorLog-2022-09-17_new.csv', 'w') as fout:
+    with open('../OpenHardwareMonitorLog-2022-09-17_new.csv', 'w') as fout:
         fout.writelines(data[1:])
 
         fin.close()
@@ -22,7 +22,7 @@ def get_pc_dataframe():
     #
     #     * Top row needs to be removed to access column titles with pandas
 
-    df = pandas.read_csv("OpenHardwareMonitorLog-2022-09-17_new.csv")
+    df = pandas.read_csv("../OpenHardwareMonitorLog-2022-09-17_new.csv")
 
     return df
 

@@ -1,6 +1,5 @@
 import pandas
 
-
 def get_pc_dataframe():
     """
     Returns a pandas dataframe of PC stats

@@ -46,6 +46,8 @@ main.obj: C:/ccs_challengespace/MSP430_LCD_display/driverlib/MSP430FR2xx_4xx/adc
 main.obj: C:/ccs_challengespace/MSP430_LCD_display/driverlib/MSP430FR2xx_4xx/crc.h
 main.obj: C:/ccs_challengespace/MSP430_LCD_display/driverlib/MSP430FR2xx_4xx/rtc.h
 main.obj: ../Board.h
+main.obj: ../usart_comms.h
+main.obj: C:/ccs_challengespace/MSP430_LCD_display/driverlib/MSP430FR2xx_4xx/driverlib.h
 
 ../main.c:
 
@@ -138,4 +140,8 @@ C:/ccs_challengespace/MSP430_LCD_display/driverlib/MSP430FR2xx_4xx/crc.h:
 C:/ccs_challengespace/MSP430_LCD_display/driverlib/MSP430FR2xx_4xx/rtc.h:
 
 ../Board.h:
+
+../usart_comms.h:
+
+C:/ccs_challengespace/MSP430_LCD_display/driverlib/MSP430FR2xx_4xx/driverlib.h:
 

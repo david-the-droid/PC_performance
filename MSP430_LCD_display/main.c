@@ -62,6 +62,8 @@
 #include "driverlib.h"
 #include "Board.h"
 
+#include "usart_comms.h"
+
 uint16_t i;
 uint8_t RXData = 0, TXData = 0;
 uint8_t check = 0;

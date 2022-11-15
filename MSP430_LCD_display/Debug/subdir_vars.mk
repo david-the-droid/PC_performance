@@ -9,21 +9,27 @@ CMD_SRCS += \
 ../lnk_msp430fr4133.cmd 
 
 C_SRCS += \
-../main.c 
+../main.c \
+../usart_comms.c 
 
 C_DEPS += \
-./main.d 
+./main.d \
+./usart_comms.d 
 
 OBJS += \
-./main.obj 
+./main.obj \
+./usart_comms.obj 
 
 OBJS__QUOTED += \
-"main.obj" 
+"main.obj" \
+"usart_comms.obj" 
 
 C_DEPS__QUOTED += \
-"main.d" 
+"main.d" \
+"usart_comms.d" 
 
 C_SRCS__QUOTED += \
-"../main.c" 
+"../main.c" \
+"../usart_comms.c" 
 
 

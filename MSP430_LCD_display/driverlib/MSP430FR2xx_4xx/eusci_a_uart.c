@@ -23,6 +23,7 @@ bool EUSCI_A_UART_init(uint16_t baseAddress, EUSCI_A_UART_initParam *param)
     bool retVal = STATUS_SUCCESS;
 
     //Disable the USCI Module
+    /*
     HWREG16(baseAddress + OFS_UCAxCTLW0) |= UCSWRST;
 
     //Clock source select
@@ -68,12 +69,14 @@ bool EUSCI_A_UART_init(uint16_t baseAddress, EUSCI_A_UART_initParam *param)
                                              );
 
     //Configure  UART mode.
+
     HWREG16(baseAddress + OFS_UCAxCTLW0) |= param->uartMode ;
 
     //Reset UCRXIE, UCBRKIE, UCDORM, UCTXADDR, UCTXBRK
     HWREG16(baseAddress + OFS_UCAxCTLW0)  &= ~(UCRXEIE + UCBRKIE + UCDORM +
                                              UCTXADDR + UCTXBRK
                                              );
+     */
     return (retVal);
 }
 

@@ -13,4 +13,6 @@
 	<templateProperties value="id=emptyProject.projectspec.emptyProject"/>
 	<origin value="C:\ti\msp430ware_3_80_14_01\driverlib\examples\MSP430FR2xx_4xx\00_emptyProject\CCS\emptyProject.projectspec"/>
 	<filesToOpen value=""/>
+	<connection value="common/targetdb/connections/TIMSP430-USB.xml"/>
+	<isTargetManual value="false"/>
 </projectOptions>

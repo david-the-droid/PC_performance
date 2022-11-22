@@ -102,13 +102,13 @@ void main(void)
     //SMCLK = 1MHz, Baudrate = 115200
     //UCBRx = 8, UCBRFx = 0, UCBRSx = 0xD6, UCOS16 = 0
 
-    usart_comms_init();
+    usart_comms_init(EUSCI_A0_BASE);
 
     // Clear the RX interrupt
-    uart_comms_clear_rx_interrupt();
+    uart_comms_clear_rx_interrupt(EUSCI_A0_BASE);
 
     // Enable RX interrupt
-    uart_comms_enable_interrupt();
+    uart_comms_enable_interrupt(EUSCI_A0_BASE);
 
     // Enable global interrupts
     __enable_interrupt();
@@ -134,9 +134,9 @@ void EUSCI_A0_ISR(void)
     {
         case USCI_NONE: break;
         case USCI_UART_UCRXIFG:
-            RXData = uart_comms_receive();
+            RXData = uart_comms_receive(EUSCI_A0_BASE);
             // Check value
-            uart_comms_transmit(RXData);
+            uart_comms_transmit(EUSCI_A0_BASE, RXData);
             break;
        case USCI_UART_UCTXIFG: break;
        case USCI_UART_UCSTTIFG: break;

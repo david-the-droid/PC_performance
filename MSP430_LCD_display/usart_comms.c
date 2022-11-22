@@ -5,19 +5,25 @@
  */
 
 #include "usart_comms.h"
+#include "stdio.h"
 
-static UCAxCTLW0_REG *const pUCAxCTLW0_REG = (UCAxCTLW0_REG*)EUSCI_A0_BASE;
+static volatile UCAxCTLW0_REG * pUCAxCTLW0_REG = (UCAxCTLW0_REG*)(NULL);
+static volatile UCAxMCTLW_REG * pUCAxMCTLW_REG = (UCAxMCTLW_REG*)(NULL);
+static volatile UCAxBRW_REG * pUCAxBRW_REG = (UCAxBRW_REG*)(NULL);
+static volatile UCAxRXBUF_REG * pUCAxRXBUF_REG = (UCAxRXBUF_REG*)(NULL);
+static volatile UCAxTXBUF_REG * pUCAxTXBUF_REG = (UCAxTXBUF_REG*)(NULL);
+static volatile UCAxIE_REG * pUCAxIE_REG = (UCAxIE_REG*)(NULL);
+static volatile UCAxIFG_REG * pUCAxIFG = (UCAxIFG_REG*)(NULL);
 
-static volatile UCAxBRW_REG *const pUCAxBRW_REG = (UCAxBRW_REG*)(EUSCI_A0_BASE+0x06);
-static volatile UCAxMCTLW_REG *const pUCAxMCTLW_REG = (UCAxMCTLW_REG*)(EUSCI_A0_BASE+0x08);
-static volatile UCAxRXBUF_REG *const pUCAxRXBUF_REG = (UCAxRXBUF_REG*)(EUSCI_A0_BASE+0x0C);
-static volatile UCAxTXBUF_REG *const pUCAxTXBUF_REG = (UCAxTXBUF_REG*)(EUSCI_A0_BASE+0x0E);
-static volatile UCAxIE_REG *const pUCAxIE_REG = (UCAxIE_REG*)(EUSCI_A0_BASE + 0x1A);
-static volatile UCAxIFG_REG *const pUCAxIFG = (UCAxIFG_REG*)(EUSCI_A0_BASE+ 0x1C);
 
-
-void usart_comms_init(void)
+void usart_comms_init(uint16_t base_address)
 {
+
+    // modify function to take the USART base as an input to the function
+
+    pUCAxCTLW0_REG = (UCAxCTLW0_REG*)(base_address + 0x00);
+    pUCAxBRW_REG = (UCAxBRW_REG*)(base_address + 0x06);
+    pUCAxMCTLW_REG = (UCAxMCTLW_REG*)(base_address + 0x08);
 
     //Disable the USCI Module
     pUCAxCTLW0_REG->UCSWRST_ = 1;
@@ -58,8 +64,11 @@ void usart_comms_init(void)
 
 }
 
-void uart_comms_enable_interrupt(void)
+void uart_comms_enable_interrupt(uint16_t base_address)
 {
+    pUCAxCTLW0_REG = (UCAxCTLW0_REG*)(base_address + 0x00);
+    pUCAxIE_REG = (UCAxIE_REG*)(base_address + 0x1A);
+
     // uart receive interrupt
     pUCAxIE_REG->UCRXIE_ |= (0x01);
     // uart transmit interrupt
@@ -75,20 +84,23 @@ void uart_comms_enable_interrupt(void)
     pUCAxCTLW0_REG->UCBRKIE_ |= (0x01);
 }
 
-void uart_comms_clear_rx_interrupt(void)
+void uart_comms_clear_rx_interrupt(uint16_t base_address)
 {
+    pUCAxIFG = (UCAxIFG_REG*)(base_address + 0x1C);
      // UCRXIE need to clear this flag
     pUCAxIFG->UCRXIFG_ &= ~(0x01);
 
 }
 
-void uart_comms_transmit(uint8_t data) // only compatible with interrupt operation for the uart
+void uart_comms_transmit(uint16_t base_address, uint8_t data) // only compatible with interrupt operation for the uart
 {
+    pUCAxTXBUF_REG = (UCAxTXBUF_REG *)(base_address + 0x0E);
     pUCAxTXBUF_REG->UCTXBUFx = data;
 }
 
-uint8_t uart_comms_receive(void) // only supports
+uint8_t uart_comms_receive(uint16_t base_address) // only supports
 {
+    pUCAxRXBUF_REG = (UCAxRXBUF_REG *)(base_address + 0x0C);
     return pUCAxRXBUF_REG->UCRXBUFx;
 }
 

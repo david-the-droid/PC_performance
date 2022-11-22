@@ -69,11 +69,10 @@ typedef struct
 }UCAxIFG_REG;
 
 
-void usart_comms_init(void);
-void uart_comms_enable_interrupt(void);
-void uart_comms_transmit(uint8_t data);
-uint8_t uart_comms_receive(void);
-void uart_comms_clear_rx_interrupt(void);
-
+void usart_comms_init(uint16_t base_address);
+void uart_comms_enable_interrupt(uint16_t base_address);
+void uart_comms_transmit(uint16_t base_address, uint8_t data);
+uint8_t uart_comms_receive(uint16_t base_address);
+void uart_comms_clear_rx_interrupt(uint16_t base_address);
 
 #endif /* USART_COMMS_H_ */

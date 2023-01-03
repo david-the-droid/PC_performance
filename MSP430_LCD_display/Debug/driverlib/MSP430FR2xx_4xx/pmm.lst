@@ -1,0 +1,2670 @@
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE    1
+
+       1            ;******************************************************************************
+       2            ;* MSP430 G3 C/C++ Codegen                                              PC v21.6.1.LTS *
+       3            ;* Date/Time created: Wed Nov 30 16:35:36 2022                                *
+       4            ;******************************************************************************
+       5                    .compiler_opts --abi=eabi --diag_wrap=off --hll_source=on --mem_model:code=large --mem_model:d
+       6            
+       7            $C$DW$CU        .dwtag  DW_TAG_compile_unit
+       8                    .dwattr $C$DW$CU, DW_AT_name("../driverlib/MSP430FR2xx_4xx/pmm.c")
+       9                    .dwattr $C$DW$CU, DW_AT_producer("TI MSP430 G3 C/C++ Codegen PC v21.6.1.LTS Copyright (c) 2003
+      10                    .dwattr $C$DW$CU, DW_AT_TI_version(0x01)
+      11                    .dwattr $C$DW$CU, DW_AT_comp_dir("C:\ccs_challengespace\MSP430_LCD_display\Debug")
+      12            $C$DW$1 .dwtag  DW_TAG_variable
+      13                    .dwattr $C$DW$1, DW_AT_name("PM5CTL0")
+      14                    .dwattr $C$DW$1, DW_AT_TI_symbol_name("PM5CTL0")
+      15                    .dwattr $C$DW$1, DW_AT_type(*$C$DW$T$63)
+      16                    .dwattr $C$DW$1, DW_AT_declaration
+      17                    .dwattr $C$DW$1, DW_AT_external
+      18                    .dwattr $C$DW$1, DW_AT_decl_file("C:\ti\ccs1110\ccs\ccs_base\msp430\include\msp430fr4133.h")
+      19                    .dwattr $C$DW$1, DW_AT_decl_line(0x664)
+      20                    .dwattr $C$DW$1, DW_AT_decl_column(0x01)
+      21            
+      22            ;       C:\ti\ccs1110\ccs\tools\compiler\ti-cgt-msp430_21.6.1.LTS\bin\acpia430.exe -@C:\\Users\\DAVID~
+      23 000000               .sect   ".text:PMM_enableSVSH"
+      24                    .clink
+      25                    .global PMM_enableSVSH
+      26            
+      27            $C$DW$2 .dwtag  DW_TAG_subprogram
+      28                    .dwattr $C$DW$2, DW_AT_name("PMM_enableSVSH")
+      29                    .dwattr $C$DW$2, DW_AT_low_pc(PMM_enableSVSH)
+      30                    .dwattr $C$DW$2, DW_AT_high_pc(0x00)
+      31                    .dwattr $C$DW$2, DW_AT_TI_symbol_name("PMM_enableSVSH")
+      32                    .dwattr $C$DW$2, DW_AT_external
+      33                    .dwattr $C$DW$2, DW_AT_TI_begin_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+      34                    .dwattr $C$DW$2, DW_AT_TI_begin_line(0x15)
+      35                    .dwattr $C$DW$2, DW_AT_TI_begin_column(0x06)
+      36                    .dwattr $C$DW$2, DW_AT_decl_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+      37                    .dwattr $C$DW$2, DW_AT_decl_line(0x15)
+      38                    .dwattr $C$DW$2, DW_AT_decl_column(0x06)
+      39                    .dwattr $C$DW$2, DW_AT_TI_max_frame_size(0x04)
+      40                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 22,column 1,is_stmt,address PMM_enableS
+      41            
+      42                    .dwfde $C$DW$CIE, PMM_enableSVSH
+      43            
+      44            ;*****************************************************************************
+      45            ;* FUNCTION NAME: PMM_enableSVSH                                             *
+      46            ;*                                                                           *
+      47            ;*   Regs Modified     : SP                                                  *
+      48            ;*   Regs Used         : SP                                                  *
+      49            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+      50            ;*****************************************************************************
+      51 000000       PMM_enableSVSH:
+      52            ;* --------------------------------------------------------------------------*
+      53                    .dwcfi  cfa_offset, 4
+      54                    .dwcfi  save_reg_to_mem, 16, -4
+      55                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 23,column 5,is_stmt,isa 0
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE    2
+
+      56 000000 40F2          MOV.B     #165,&0x121           ; [] |23| 
+         000002 00A5 
+         000004 0121 
+      57                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 24,column 5,is_stmt,isa 0
+      58 000006 D0F2          OR.B      #64,&0x120            ; [] |24| 
+         000008 0040 
+         00000a 0120 
+      59                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 25,column 5,is_stmt,isa 0
+      60 00000c 43C2          MOV.B     #0,&0x121             ; [] |25| 
+         00000e 0121 
+      61                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 26,column 1,is_stmt,isa 0
+      62            $C$DW$3 .dwtag  DW_TAG_TI_branch
+      63                    .dwattr $C$DW$3, DW_AT_low_pc(0x00)
+      64                    .dwattr $C$DW$3, DW_AT_TI_return
+      65            
+      66 000010 0110          RETA      ; [] 
+      67                    ; [] 
+      68                    .dwattr $C$DW$2, DW_AT_TI_end_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+      69                    .dwattr $C$DW$2, DW_AT_TI_end_line(0x1a)
+      70                    .dwattr $C$DW$2, DW_AT_TI_end_column(0x01)
+      71                    .dwendentry
+      72                    .dwendtag $C$DW$2
+      73            
+      74 000000               .sect   ".text:PMM_disableSVSH"
+      75                    .clink
+      76                    .global PMM_disableSVSH
+      77            
+      78            $C$DW$4 .dwtag  DW_TAG_subprogram
+      79                    .dwattr $C$DW$4, DW_AT_name("PMM_disableSVSH")
+      80                    .dwattr $C$DW$4, DW_AT_low_pc(PMM_disableSVSH)
+      81                    .dwattr $C$DW$4, DW_AT_high_pc(0x00)
+      82                    .dwattr $C$DW$4, DW_AT_TI_symbol_name("PMM_disableSVSH")
+      83                    .dwattr $C$DW$4, DW_AT_external
+      84                    .dwattr $C$DW$4, DW_AT_TI_begin_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+      85                    .dwattr $C$DW$4, DW_AT_TI_begin_line(0x1c)
+      86                    .dwattr $C$DW$4, DW_AT_TI_begin_column(0x06)
+      87                    .dwattr $C$DW$4, DW_AT_decl_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+      88                    .dwattr $C$DW$4, DW_AT_decl_line(0x1c)
+      89                    .dwattr $C$DW$4, DW_AT_decl_column(0x06)
+      90                    .dwattr $C$DW$4, DW_AT_TI_max_frame_size(0x04)
+      91                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 29,column 1,is_stmt,address PMM_disable
+      92            
+      93                    .dwfde $C$DW$CIE, PMM_disableSVSH
+      94            
+      95            ;*****************************************************************************
+      96            ;* FUNCTION NAME: PMM_disableSVSH                                            *
+      97            ;*                                                                           *
+      98            ;*   Regs Modified     : SP,SR                                               *
+      99            ;*   Regs Used         : SP,SR                                               *
+     100            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     101            ;*****************************************************************************
+     102 000000       PMM_disableSVSH:
+     103            ;* --------------------------------------------------------------------------*
+     104                    .dwcfi  cfa_offset, 4
+     105                    .dwcfi  save_reg_to_mem, 16, -4
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE    3
+
+     106                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 30,column 5,is_stmt,isa 0
+     107 000000 40F2          MOV.B     #165,&0x121           ; [] |30| 
+         000002 00A5 
+         000004 0121 
+     108                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 31,column 5,is_stmt,isa 0
+     109 000006 F0F2          AND.B     #191,&0x120           ; [] |31| 
+         000008 00BF 
+         00000a 0120 
+     110                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 32,column 5,is_stmt,isa 0
+     111 00000c 43C2          MOV.B     #0,&0x121             ; [] |32| 
+         00000e 0121 
+     112                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 33,column 1,is_stmt,isa 0
+     113            $C$DW$5 .dwtag  DW_TAG_TI_branch
+     114                    .dwattr $C$DW$5, DW_AT_low_pc(0x00)
+     115                    .dwattr $C$DW$5, DW_AT_TI_return
+     116            
+     117 000010 0110          RETA      ; [] 
+     118                    ; [] 
+     119                    .dwattr $C$DW$4, DW_AT_TI_end_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     120                    .dwattr $C$DW$4, DW_AT_TI_end_line(0x21)
+     121                    .dwattr $C$DW$4, DW_AT_TI_end_column(0x01)
+     122                    .dwendentry
+     123                    .dwendtag $C$DW$4
+     124            
+     125 000000               .sect   ".text:PMM_turnOnRegulator"
+     126                    .clink
+     127                    .global PMM_turnOnRegulator
+     128            
+     129            $C$DW$6 .dwtag  DW_TAG_subprogram
+     130                    .dwattr $C$DW$6, DW_AT_name("PMM_turnOnRegulator")
+     131                    .dwattr $C$DW$6, DW_AT_low_pc(PMM_turnOnRegulator)
+     132                    .dwattr $C$DW$6, DW_AT_high_pc(0x00)
+     133                    .dwattr $C$DW$6, DW_AT_TI_symbol_name("PMM_turnOnRegulator")
+     134                    .dwattr $C$DW$6, DW_AT_external
+     135                    .dwattr $C$DW$6, DW_AT_TI_begin_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     136                    .dwattr $C$DW$6, DW_AT_TI_begin_line(0x23)
+     137                    .dwattr $C$DW$6, DW_AT_TI_begin_column(0x06)
+     138                    .dwattr $C$DW$6, DW_AT_decl_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     139                    .dwattr $C$DW$6, DW_AT_decl_line(0x23)
+     140                    .dwattr $C$DW$6, DW_AT_decl_column(0x06)
+     141                    .dwattr $C$DW$6, DW_AT_TI_max_frame_size(0x04)
+     142                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 36,column 1,is_stmt,address PMM_turnOnR
+     143            
+     144                    .dwfde $C$DW$CIE, PMM_turnOnRegulator
+     145            
+     146            ;*****************************************************************************
+     147            ;* FUNCTION NAME: PMM_turnOnRegulator                                        *
+     148            ;*                                                                           *
+     149            ;*   Regs Modified     : SP,SR                                               *
+     150            ;*   Regs Used         : SP,SR                                               *
+     151            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     152            ;*****************************************************************************
+     153 000000       PMM_turnOnRegulator:
+     154            ;* --------------------------------------------------------------------------*
+     155                    .dwcfi  cfa_offset, 4
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE    4
+
+     156                    .dwcfi  save_reg_to_mem, 16, -4
+     157                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 37,column 5,is_stmt,isa 0
+     158 000000 40F2          MOV.B     #165,&0x121           ; [] |37| 
+         000002 00A5 
+         000004 0121 
+     159                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 38,column 5,is_stmt,isa 0
+     160 000006 F0F2          AND.B     #239,&0x120           ; [] |38| 
+         000008 00EF 
+         00000a 0120 
+     161                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 39,column 5,is_stmt,isa 0
+     162 00000c 43C2          MOV.B     #0,&0x121             ; [] |39| 
+         00000e 0121 
+     163                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 40,column 1,is_stmt,isa 0
+     164            $C$DW$7 .dwtag  DW_TAG_TI_branch
+     165                    .dwattr $C$DW$7, DW_AT_low_pc(0x00)
+     166                    .dwattr $C$DW$7, DW_AT_TI_return
+     167            
+     168 000010 0110          RETA      ; [] 
+     169                    ; [] 
+     170                    .dwattr $C$DW$6, DW_AT_TI_end_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     171                    .dwattr $C$DW$6, DW_AT_TI_end_line(0x28)
+     172                    .dwattr $C$DW$6, DW_AT_TI_end_column(0x01)
+     173                    .dwendentry
+     174                    .dwendtag $C$DW$6
+     175            
+     176 000000               .sect   ".text:PMM_turnOffRegulator"
+     177                    .clink
+     178                    .global PMM_turnOffRegulator
+     179            
+     180            $C$DW$8 .dwtag  DW_TAG_subprogram
+     181                    .dwattr $C$DW$8, DW_AT_name("PMM_turnOffRegulator")
+     182                    .dwattr $C$DW$8, DW_AT_low_pc(PMM_turnOffRegulator)
+     183                    .dwattr $C$DW$8, DW_AT_high_pc(0x00)
+     184                    .dwattr $C$DW$8, DW_AT_TI_symbol_name("PMM_turnOffRegulator")
+     185                    .dwattr $C$DW$8, DW_AT_external
+     186                    .dwattr $C$DW$8, DW_AT_TI_begin_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     187                    .dwattr $C$DW$8, DW_AT_TI_begin_line(0x2a)
+     188                    .dwattr $C$DW$8, DW_AT_TI_begin_column(0x06)
+     189                    .dwattr $C$DW$8, DW_AT_decl_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     190                    .dwattr $C$DW$8, DW_AT_decl_line(0x2a)
+     191                    .dwattr $C$DW$8, DW_AT_decl_column(0x06)
+     192                    .dwattr $C$DW$8, DW_AT_TI_max_frame_size(0x04)
+     193                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 43,column 1,is_stmt,address PMM_turnOff
+     194            
+     195                    .dwfde $C$DW$CIE, PMM_turnOffRegulator
+     196            
+     197            ;*****************************************************************************
+     198            ;* FUNCTION NAME: PMM_turnOffRegulator                                       *
+     199            ;*                                                                           *
+     200            ;*   Regs Modified     : SP                                                  *
+     201            ;*   Regs Used         : SP                                                  *
+     202            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     203            ;*****************************************************************************
+     204 000000       PMM_turnOffRegulator:
+     205            ;* --------------------------------------------------------------------------*
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE    5
+
+     206                    .dwcfi  cfa_offset, 4
+     207                    .dwcfi  save_reg_to_mem, 16, -4
+     208                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 44,column 5,is_stmt,isa 0
+     209 000000 40F2          MOV.B     #165,&0x121           ; [] |44| 
+         000002 00A5 
+         000004 0121 
+     210                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 45,column 5,is_stmt,isa 0
+     211 000006 D0F2          OR.B      #16,&0x120            ; [] |45| 
+         000008 0010 
+         00000a 0120 
+     212                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 46,column 5,is_stmt,isa 0
+     213 00000c 43C2          MOV.B     #0,&0x121             ; [] |46| 
+         00000e 0121 
+     214                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 47,column 1,is_stmt,isa 0
+     215            $C$DW$9 .dwtag  DW_TAG_TI_branch
+     216                    .dwattr $C$DW$9, DW_AT_low_pc(0x00)
+     217                    .dwattr $C$DW$9, DW_AT_TI_return
+     218            
+     219 000010 0110          RETA      ; [] 
+     220                    ; [] 
+     221                    .dwattr $C$DW$8, DW_AT_TI_end_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     222                    .dwattr $C$DW$8, DW_AT_TI_end_line(0x2f)
+     223                    .dwattr $C$DW$8, DW_AT_TI_end_column(0x01)
+     224                    .dwendentry
+     225                    .dwendtag $C$DW$8
+     226            
+     227 000000               .sect   ".text:PMM_trigPOR"
+     228                    .clink
+     229                    .global PMM_trigPOR
+     230            
+     231            $C$DW$10        .dwtag  DW_TAG_subprogram
+     232                    .dwattr $C$DW$10, DW_AT_name("PMM_trigPOR")
+     233                    .dwattr $C$DW$10, DW_AT_low_pc(PMM_trigPOR)
+     234                    .dwattr $C$DW$10, DW_AT_high_pc(0x00)
+     235                    .dwattr $C$DW$10, DW_AT_TI_symbol_name("PMM_trigPOR")
+     236                    .dwattr $C$DW$10, DW_AT_external
+     237                    .dwattr $C$DW$10, DW_AT_TI_begin_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     238                    .dwattr $C$DW$10, DW_AT_TI_begin_line(0x31)
+     239                    .dwattr $C$DW$10, DW_AT_TI_begin_column(0x06)
+     240                    .dwattr $C$DW$10, DW_AT_decl_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     241                    .dwattr $C$DW$10, DW_AT_decl_line(0x31)
+     242                    .dwattr $C$DW$10, DW_AT_decl_column(0x06)
+     243                    .dwattr $C$DW$10, DW_AT_TI_max_frame_size(0x04)
+     244                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 50,column 1,is_stmt,address PMM_trigPOR
+     245            
+     246                    .dwfde $C$DW$CIE, PMM_trigPOR
+     247            
+     248            ;*****************************************************************************
+     249            ;* FUNCTION NAME: PMM_trigPOR                                                *
+     250            ;*                                                                           *
+     251            ;*   Regs Modified     : SP                                                  *
+     252            ;*   Regs Used         : SP                                                  *
+     253            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     254            ;*****************************************************************************
+     255 000000       PMM_trigPOR:
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE    6
+
+     256            ;* --------------------------------------------------------------------------*
+     257                    .dwcfi  cfa_offset, 4
+     258                    .dwcfi  save_reg_to_mem, 16, -4
+     259                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 51,column 5,is_stmt,isa 0
+     260 000000 40F2          MOV.B     #165,&0x121           ; [] |51| 
+         000002 00A5 
+         000004 0121 
+     261                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 52,column 5,is_stmt,isa 0
+     262 000006 D2F2          OR.B      #8,&0x120             ; [] |52| 
+         000008 0120 
+     263                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 53,column 5,is_stmt,isa 0
+     264 00000a 43C2          MOV.B     #0,&0x121             ; [] |53| 
+         00000c 0121 
+     265                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 54,column 1,is_stmt,isa 0
+     266            $C$DW$11        .dwtag  DW_TAG_TI_branch
+     267                    .dwattr $C$DW$11, DW_AT_low_pc(0x00)
+     268                    .dwattr $C$DW$11, DW_AT_TI_return
+     269            
+     270 00000e 0110          RETA      ; [] 
+     271                    ; [] 
+     272                    .dwattr $C$DW$10, DW_AT_TI_end_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     273                    .dwattr $C$DW$10, DW_AT_TI_end_line(0x36)
+     274                    .dwattr $C$DW$10, DW_AT_TI_end_column(0x01)
+     275                    .dwendentry
+     276                    .dwendtag $C$DW$10
+     277            
+     278 000000               .sect   ".text:PMM_trigBOR"
+     279                    .clink
+     280                    .global PMM_trigBOR
+     281            
+     282            $C$DW$12        .dwtag  DW_TAG_subprogram
+     283                    .dwattr $C$DW$12, DW_AT_name("PMM_trigBOR")
+     284                    .dwattr $C$DW$12, DW_AT_low_pc(PMM_trigBOR)
+     285                    .dwattr $C$DW$12, DW_AT_high_pc(0x00)
+     286                    .dwattr $C$DW$12, DW_AT_TI_symbol_name("PMM_trigBOR")
+     287                    .dwattr $C$DW$12, DW_AT_external
+     288                    .dwattr $C$DW$12, DW_AT_TI_begin_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     289                    .dwattr $C$DW$12, DW_AT_TI_begin_line(0x38)
+     290                    .dwattr $C$DW$12, DW_AT_TI_begin_column(0x06)
+     291                    .dwattr $C$DW$12, DW_AT_decl_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     292                    .dwattr $C$DW$12, DW_AT_decl_line(0x38)
+     293                    .dwattr $C$DW$12, DW_AT_decl_column(0x06)
+     294                    .dwattr $C$DW$12, DW_AT_TI_max_frame_size(0x04)
+     295                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 57,column 1,is_stmt,address PMM_trigBOR
+     296            
+     297                    .dwfde $C$DW$CIE, PMM_trigBOR
+     298            
+     299            ;*****************************************************************************
+     300            ;* FUNCTION NAME: PMM_trigBOR                                                *
+     301            ;*                                                                           *
+     302            ;*   Regs Modified     : SP                                                  *
+     303            ;*   Regs Used         : SP                                                  *
+     304            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     305            ;*****************************************************************************
+     306 000000       PMM_trigBOR:
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE    7
+
+     307            ;* --------------------------------------------------------------------------*
+     308                    .dwcfi  cfa_offset, 4
+     309                    .dwcfi  save_reg_to_mem, 16, -4
+     310                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 58,column 5,is_stmt,isa 0
+     311 000000 40F2          MOV.B     #165,&0x121           ; [] |58| 
+         000002 00A5 
+         000004 0121 
+     312                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 59,column 5,is_stmt,isa 0
+     313 000006 D2E2          OR.B      #4,&0x120             ; [] |59| 
+         000008 0120 
+     314                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 60,column 5,is_stmt,isa 0
+     315 00000a 43C2          MOV.B     #0,&0x121             ; [] |60| 
+         00000c 0121 
+     316                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 61,column 1,is_stmt,isa 0
+     317            $C$DW$13        .dwtag  DW_TAG_TI_branch
+     318                    .dwattr $C$DW$13, DW_AT_low_pc(0x00)
+     319                    .dwattr $C$DW$13, DW_AT_TI_return
+     320            
+     321 00000e 0110          RETA      ; [] 
+     322                    ; [] 
+     323                    .dwattr $C$DW$12, DW_AT_TI_end_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     324                    .dwattr $C$DW$12, DW_AT_TI_end_line(0x3d)
+     325                    .dwattr $C$DW$12, DW_AT_TI_end_column(0x01)
+     326                    .dwendentry
+     327                    .dwendtag $C$DW$12
+     328            
+     329 000000               .sect   ".text:PMM_clearInterrupt"
+     330                    .clink
+     331                    .global PMM_clearInterrupt
+     332            
+     333            $C$DW$14        .dwtag  DW_TAG_subprogram
+     334                    .dwattr $C$DW$14, DW_AT_name("PMM_clearInterrupt")
+     335                    .dwattr $C$DW$14, DW_AT_low_pc(PMM_clearInterrupt)
+     336                    .dwattr $C$DW$14, DW_AT_high_pc(0x00)
+     337                    .dwattr $C$DW$14, DW_AT_TI_symbol_name("PMM_clearInterrupt")
+     338                    .dwattr $C$DW$14, DW_AT_external
+     339                    .dwattr $C$DW$14, DW_AT_TI_begin_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     340                    .dwattr $C$DW$14, DW_AT_TI_begin_line(0x3f)
+     341                    .dwattr $C$DW$14, DW_AT_TI_begin_column(0x06)
+     342                    .dwattr $C$DW$14, DW_AT_decl_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     343                    .dwattr $C$DW$14, DW_AT_decl_line(0x3f)
+     344                    .dwattr $C$DW$14, DW_AT_decl_column(0x06)
+     345                    .dwattr $C$DW$14, DW_AT_TI_max_frame_size(0x06)
+     346                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 64,column 1,is_stmt,address PMM_clearIn
+     347            
+     348                    .dwfde $C$DW$CIE, PMM_clearInterrupt
+     349            $C$DW$15        .dwtag  DW_TAG_formal_parameter
+     350                    .dwattr $C$DW$15, DW_AT_name("mask")
+     351                    .dwattr $C$DW$15, DW_AT_TI_symbol_name("mask")
+     352                    .dwattr $C$DW$15, DW_AT_type(*$C$DW$T$25)
+     353                    .dwattr $C$DW$15, DW_AT_location[DW_OP_reg12]
+     354            
+     355            
+     356            ;*****************************************************************************
+     357            ;* FUNCTION NAME: PMM_clearInterrupt                                         *
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE    8
+
+     358            ;*                                                                           *
+     359            ;*   Regs Modified     : SP,SR                                               *
+     360            ;*   Regs Used         : SP,SR,r12                                           *
+     361            ;*   Local Frame Size  : 0 Args + 2 Auto + 0 Save = 2 byte                   *
+     362            ;*****************************************************************************
+     363 000000       PMM_clearInterrupt:
+     364            ;* --------------------------------------------------------------------------*
+     365                    .dwcfi  cfa_offset, 4
+     366                    .dwcfi  save_reg_to_mem, 16, -4
+     367 000000 8321          SUB.W     #2,SP                 ; [] 
+     368                    .dwcfi  cfa_offset, 6
+     369            $C$DW$16        .dwtag  DW_TAG_variable
+     370                    .dwattr $C$DW$16, DW_AT_name("mask")
+     371                    .dwattr $C$DW$16, DW_AT_TI_symbol_name("mask")
+     372                    .dwattr $C$DW$16, DW_AT_type(*$C$DW$T$25)
+     373                    .dwattr $C$DW$16, DW_AT_location[DW_OP_breg1 0]
+     374            
+     375 000002 4C81          MOV.W     r12,0(SP)             ; [] |64| 
+         000004 0000 
+     376                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 65,column 5,is_stmt,isa 0
+     377 000006 40F2          MOV.B     #165,&0x121           ; [] |65| 
+         000008 00A5 
+         00000a 0121 
+     378                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 66,column 5,is_stmt,isa 0
+     379 00000c C1A2          BIC.W     0(SP),&0x12a          ; [] |66| 
+         00000e 012A 
+     380                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 67,column 5,is_stmt,isa 0
+     381 000010 43C2          MOV.B     #0,&0x121             ; [] |67| 
+         000012 0121 
+     382                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 68,column 1,is_stmt,isa 0
+     383 000014 5321          ADD.W     #2,SP                 ; [] 
+     384                    .dwcfi  cfa_offset, 4
+     385            $C$DW$17        .dwtag  DW_TAG_TI_branch
+     386                    .dwattr $C$DW$17, DW_AT_low_pc(0x00)
+     387                    .dwattr $C$DW$17, DW_AT_TI_return
+     388            
+     389 000016 0110          RETA      ; [] 
+     390                    ; [] 
+     391                    .dwattr $C$DW$14, DW_AT_TI_end_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     392                    .dwattr $C$DW$14, DW_AT_TI_end_line(0x44)
+     393                    .dwattr $C$DW$14, DW_AT_TI_end_column(0x01)
+     394                    .dwendentry
+     395                    .dwendtag $C$DW$14
+     396            
+     397 000000               .sect   ".text:PMM_getInterruptStatus"
+     398                    .clink
+     399                    .global PMM_getInterruptStatus
+     400            
+     401            $C$DW$18        .dwtag  DW_TAG_subprogram
+     402                    .dwattr $C$DW$18, DW_AT_name("PMM_getInterruptStatus")
+     403                    .dwattr $C$DW$18, DW_AT_low_pc(PMM_getInterruptStatus)
+     404                    .dwattr $C$DW$18, DW_AT_high_pc(0x00)
+     405                    .dwattr $C$DW$18, DW_AT_TI_symbol_name("PMM_getInterruptStatus")
+     406                    .dwattr $C$DW$18, DW_AT_external
+     407                    .dwattr $C$DW$18, DW_AT_type(*$C$DW$T$25)
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE    9
+
+     408                    .dwattr $C$DW$18, DW_AT_TI_begin_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     409                    .dwattr $C$DW$18, DW_AT_TI_begin_line(0x46)
+     410                    .dwattr $C$DW$18, DW_AT_TI_begin_column(0x0a)
+     411                    .dwattr $C$DW$18, DW_AT_decl_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     412                    .dwattr $C$DW$18, DW_AT_decl_line(0x46)
+     413                    .dwattr $C$DW$18, DW_AT_decl_column(0x0a)
+     414                    .dwattr $C$DW$18, DW_AT_TI_max_frame_size(0x06)
+     415                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 71,column 1,is_stmt,address PMM_getInte
+     416            
+     417                    .dwfde $C$DW$CIE, PMM_getInterruptStatus
+     418            $C$DW$19        .dwtag  DW_TAG_formal_parameter
+     419                    .dwattr $C$DW$19, DW_AT_name("mask")
+     420                    .dwattr $C$DW$19, DW_AT_TI_symbol_name("mask")
+     421                    .dwattr $C$DW$19, DW_AT_type(*$C$DW$T$25)
+     422                    .dwattr $C$DW$19, DW_AT_location[DW_OP_reg12]
+     423            
+     424            
+     425            ;*****************************************************************************
+     426            ;* FUNCTION NAME: PMM_getInterruptStatus                                     *
+     427            ;*                                                                           *
+     428            ;*   Regs Modified     : SP,SR,r12                                           *
+     429            ;*   Regs Used         : SP,SR,r12                                           *
+     430            ;*   Local Frame Size  : 0 Args + 2 Auto + 0 Save = 2 byte                   *
+     431            ;*****************************************************************************
+     432 000000       PMM_getInterruptStatus:
+     433            ;* --------------------------------------------------------------------------*
+     434                    .dwcfi  cfa_offset, 4
+     435                    .dwcfi  save_reg_to_mem, 16, -4
+     436 000000 8321          SUB.W     #2,SP                 ; [] 
+     437                    .dwcfi  cfa_offset, 6
+     438            $C$DW$20        .dwtag  DW_TAG_variable
+     439                    .dwattr $C$DW$20, DW_AT_name("mask")
+     440                    .dwattr $C$DW$20, DW_AT_TI_symbol_name("mask")
+     441                    .dwattr $C$DW$20, DW_AT_type(*$C$DW$T$25)
+     442                    .dwattr $C$DW$20, DW_AT_location[DW_OP_breg1 0]
+     443            
+     444 000002 4C81          MOV.W     r12,0(SP)             ; [] |71| 
+         000004 0000 
+     445                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 72,column 5,is_stmt,isa 0
+     446 000006 F21C          AND.W     &0x12a,r12            ; [] |72| 
+         000008 012A 
+     447                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 73,column 1,is_stmt,isa 0
+     448 00000a 5321          ADD.W     #2,SP                 ; [] 
+     449                    .dwcfi  cfa_offset, 4
+     450            $C$DW$21        .dwtag  DW_TAG_TI_branch
+     451                    .dwattr $C$DW$21, DW_AT_low_pc(0x00)
+     452                    .dwattr $C$DW$21, DW_AT_TI_return
+     453            
+     454 00000c 0110          RETA      ; [] 
+     455                    ; [] 
+     456                    .dwattr $C$DW$18, DW_AT_TI_end_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     457                    .dwattr $C$DW$18, DW_AT_TI_end_line(0x49)
+     458                    .dwattr $C$DW$18, DW_AT_TI_end_column(0x01)
+     459                    .dwendentry
+     460                    .dwendtag $C$DW$18
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE   10
+
+     461            
+     462 000000               .sect   ".text:PMM_unlockLPM5"
+     463                    .clink
+     464                    .global PMM_unlockLPM5
+     465            
+     466            $C$DW$22        .dwtag  DW_TAG_subprogram
+     467                    .dwattr $C$DW$22, DW_AT_name("PMM_unlockLPM5")
+     468                    .dwattr $C$DW$22, DW_AT_low_pc(PMM_unlockLPM5)
+     469                    .dwattr $C$DW$22, DW_AT_high_pc(0x00)
+     470                    .dwattr $C$DW$22, DW_AT_TI_symbol_name("PMM_unlockLPM5")
+     471                    .dwattr $C$DW$22, DW_AT_external
+     472                    .dwattr $C$DW$22, DW_AT_TI_begin_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     473                    .dwattr $C$DW$22, DW_AT_TI_begin_line(0x4b)
+     474                    .dwattr $C$DW$22, DW_AT_TI_begin_column(0x06)
+     475                    .dwattr $C$DW$22, DW_AT_decl_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     476                    .dwattr $C$DW$22, DW_AT_decl_line(0x4b)
+     477                    .dwattr $C$DW$22, DW_AT_decl_column(0x06)
+     478                    .dwattr $C$DW$22, DW_AT_TI_max_frame_size(0x04)
+     479                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 76,column 1,is_stmt,address PMM_unlockL
+     480            
+     481                    .dwfde $C$DW$CIE, PMM_unlockLPM5
+     482            
+     483            ;*****************************************************************************
+     484            ;* FUNCTION NAME: PMM_unlockLPM5                                             *
+     485            ;*                                                                           *
+     486            ;*   Regs Modified     : SP                                                  *
+     487            ;*   Regs Used         : SP                                                  *
+     488            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     489            ;*****************************************************************************
+     490 000000       PMM_unlockLPM5:
+     491            ;* --------------------------------------------------------------------------*
+     492                    .dwcfi  cfa_offset, 4
+     493                    .dwcfi  save_reg_to_mem, 16, -4
+     494                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 83,column 2,is_stmt,isa 0
+     495 000000 C392          BIC.W     #1,&PM5CTL0+0         ; [] |83| 
+         000002 0000!
+     496                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 84,column 1,is_stmt,isa 0
+     497            $C$DW$23        .dwtag  DW_TAG_TI_branch
+     498                    .dwattr $C$DW$23, DW_AT_low_pc(0x00)
+     499                    .dwattr $C$DW$23, DW_AT_TI_return
+     500            
+     501 000004 0110          RETA      ; [] 
+     502                    ; [] 
+     503                    .dwattr $C$DW$22, DW_AT_TI_end_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     504                    .dwattr $C$DW$22, DW_AT_TI_end_line(0x54)
+     505                    .dwattr $C$DW$22, DW_AT_TI_end_column(0x01)
+     506                    .dwendentry
+     507                    .dwendtag $C$DW$22
+     508            
+     509 000000               .sect   ".text:PMM_getBandgapMode"
+     510                    .clink
+     511                    .global PMM_getBandgapMode
+     512            
+     513            $C$DW$24        .dwtag  DW_TAG_subprogram
+     514                    .dwattr $C$DW$24, DW_AT_name("PMM_getBandgapMode")
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE   11
+
+     515                    .dwattr $C$DW$24, DW_AT_low_pc(PMM_getBandgapMode)
+     516                    .dwattr $C$DW$24, DW_AT_high_pc(0x00)
+     517                    .dwattr $C$DW$24, DW_AT_TI_symbol_name("PMM_getBandgapMode")
+     518                    .dwattr $C$DW$24, DW_AT_external
+     519                    .dwattr $C$DW$24, DW_AT_type(*$C$DW$T$25)
+     520                    .dwattr $C$DW$24, DW_AT_TI_begin_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     521                    .dwattr $C$DW$24, DW_AT_TI_begin_line(0x56)
+     522                    .dwattr $C$DW$24, DW_AT_TI_begin_column(0x0a)
+     523                    .dwattr $C$DW$24, DW_AT_decl_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     524                    .dwattr $C$DW$24, DW_AT_decl_line(0x56)
+     525                    .dwattr $C$DW$24, DW_AT_decl_column(0x0a)
+     526                    .dwattr $C$DW$24, DW_AT_TI_max_frame_size(0x04)
+     527                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 87,column 1,is_stmt,address PMM_getBand
+     528            
+     529                    .dwfde $C$DW$CIE, PMM_getBandgapMode
+     530            
+     531            ;*****************************************************************************
+     532            ;* FUNCTION NAME: PMM_getBandgapMode                                         *
+     533            ;*                                                                           *
+     534            ;*   Regs Modified     : SP,SR,r12                                           *
+     535            ;*   Regs Used         : SP,SR,r12                                           *
+     536            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     537            ;*****************************************************************************
+     538 000000       PMM_getBandgapMode:
+     539            ;* --------------------------------------------------------------------------*
+     540                    .dwcfi  cfa_offset, 4
+     541                    .dwcfi  save_reg_to_mem, 16, -4
+     542                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 88,column 5,is_stmt,isa 0
+     543 000000 403C          MOV.W     #2048,r12             ; [] |88| 
+         000002 0800 
+     544 000004 F21C          AND.W     &0x124,r12            ; [] |88| 
+         000006 0124 
+     545                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 89,column 1,is_stmt,isa 0
+     546            $C$DW$25        .dwtag  DW_TAG_TI_branch
+     547                    .dwattr $C$DW$25, DW_AT_low_pc(0x00)
+     548                    .dwattr $C$DW$25, DW_AT_TI_return
+     549            
+     550 000008 0110          RETA      ; [] 
+     551                    ; [] 
+     552                    .dwattr $C$DW$24, DW_AT_TI_end_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     553                    .dwattr $C$DW$24, DW_AT_TI_end_line(0x59)
+     554                    .dwattr $C$DW$24, DW_AT_TI_end_column(0x01)
+     555                    .dwendentry
+     556                    .dwendtag $C$DW$24
+     557            
+     558 000000               .sect   ".text:PMM_isBandgapActive"
+     559                    .clink
+     560                    .global PMM_isBandgapActive
+     561            
+     562            $C$DW$26        .dwtag  DW_TAG_subprogram
+     563                    .dwattr $C$DW$26, DW_AT_name("PMM_isBandgapActive")
+     564                    .dwattr $C$DW$26, DW_AT_low_pc(PMM_isBandgapActive)
+     565                    .dwattr $C$DW$26, DW_AT_high_pc(0x00)
+     566                    .dwattr $C$DW$26, DW_AT_TI_symbol_name("PMM_isBandgapActive")
+     567                    .dwattr $C$DW$26, DW_AT_external
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE   12
+
+     568                    .dwattr $C$DW$26, DW_AT_type(*$C$DW$T$25)
+     569                    .dwattr $C$DW$26, DW_AT_TI_begin_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     570                    .dwattr $C$DW$26, DW_AT_TI_begin_line(0x5b)
+     571                    .dwattr $C$DW$26, DW_AT_TI_begin_column(0x0a)
+     572                    .dwattr $C$DW$26, DW_AT_decl_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     573                    .dwattr $C$DW$26, DW_AT_decl_line(0x5b)
+     574                    .dwattr $C$DW$26, DW_AT_decl_column(0x0a)
+     575                    .dwattr $C$DW$26, DW_AT_TI_max_frame_size(0x04)
+     576                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 92,column 1,is_stmt,address PMM_isBandg
+     577            
+     578                    .dwfde $C$DW$CIE, PMM_isBandgapActive
+     579            
+     580            ;*****************************************************************************
+     581            ;* FUNCTION NAME: PMM_isBandgapActive                                        *
+     582            ;*                                                                           *
+     583            ;*   Regs Modified     : SP,SR,r12                                           *
+     584            ;*   Regs Used         : SP,SR,r12                                           *
+     585            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     586            ;*****************************************************************************
+     587 000000       PMM_isBandgapActive:
+     588            ;* --------------------------------------------------------------------------*
+     589                    .dwcfi  cfa_offset, 4
+     590                    .dwcfi  save_reg_to_mem, 16, -4
+     591                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 93,column 5,is_stmt,isa 0
+     592 000000 403C          MOV.W     #512,r12              ; [] |93| 
+         000002 0200 
+     593 000004 F21C          AND.W     &0x124,r12            ; [] |93| 
+         000006 0124 
+     594                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 94,column 1,is_stmt,isa 0
+     595            $C$DW$27        .dwtag  DW_TAG_TI_branch
+     596                    .dwattr $C$DW$27, DW_AT_low_pc(0x00)
+     597                    .dwattr $C$DW$27, DW_AT_TI_return
+     598            
+     599 000008 0110          RETA      ; [] 
+     600                    ; [] 
+     601                    .dwattr $C$DW$26, DW_AT_TI_end_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     602                    .dwattr $C$DW$26, DW_AT_TI_end_line(0x5e)
+     603                    .dwattr $C$DW$26, DW_AT_TI_end_column(0x01)
+     604                    .dwendentry
+     605                    .dwendtag $C$DW$26
+     606            
+     607 000000               .sect   ".text:PMM_isRefGenActive"
+     608                    .clink
+     609                    .global PMM_isRefGenActive
+     610            
+     611            $C$DW$28        .dwtag  DW_TAG_subprogram
+     612                    .dwattr $C$DW$28, DW_AT_name("PMM_isRefGenActive")
+     613                    .dwattr $C$DW$28, DW_AT_low_pc(PMM_isRefGenActive)
+     614                    .dwattr $C$DW$28, DW_AT_high_pc(0x00)
+     615                    .dwattr $C$DW$28, DW_AT_TI_symbol_name("PMM_isRefGenActive")
+     616                    .dwattr $C$DW$28, DW_AT_external
+     617                    .dwattr $C$DW$28, DW_AT_type(*$C$DW$T$25)
+     618                    .dwattr $C$DW$28, DW_AT_TI_begin_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     619                    .dwattr $C$DW$28, DW_AT_TI_begin_line(0x60)
+     620                    .dwattr $C$DW$28, DW_AT_TI_begin_column(0x0a)
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE   13
+
+     621                    .dwattr $C$DW$28, DW_AT_decl_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     622                    .dwattr $C$DW$28, DW_AT_decl_line(0x60)
+     623                    .dwattr $C$DW$28, DW_AT_decl_column(0x0a)
+     624                    .dwattr $C$DW$28, DW_AT_TI_max_frame_size(0x04)
+     625                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 97,column 1,is_stmt,address PMM_isRefGe
+     626            
+     627                    .dwfde $C$DW$CIE, PMM_isRefGenActive
+     628            
+     629            ;*****************************************************************************
+     630            ;* FUNCTION NAME: PMM_isRefGenActive                                         *
+     631            ;*                                                                           *
+     632            ;*   Regs Modified     : SP,SR,r12                                           *
+     633            ;*   Regs Used         : SP,SR,r12                                           *
+     634            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     635            ;*****************************************************************************
+     636 000000       PMM_isRefGenActive:
+     637            ;* --------------------------------------------------------------------------*
+     638                    .dwcfi  cfa_offset, 4
+     639                    .dwcfi  save_reg_to_mem, 16, -4
+     640                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 98,column 5,is_stmt,isa 0
+     641 000000 403C          MOV.W     #256,r12              ; [] |98| 
+         000002 0100 
+     642 000004 F21C          AND.W     &0x124,r12            ; [] |98| 
+         000006 0124 
+     643                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 99,column 1,is_stmt,isa 0
+     644            $C$DW$29        .dwtag  DW_TAG_TI_branch
+     645                    .dwattr $C$DW$29, DW_AT_low_pc(0x00)
+     646                    .dwattr $C$DW$29, DW_AT_TI_return
+     647            
+     648 000008 0110          RETA      ; [] 
+     649                    ; [] 
+     650                    .dwattr $C$DW$28, DW_AT_TI_end_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     651                    .dwattr $C$DW$28, DW_AT_TI_end_line(0x63)
+     652                    .dwattr $C$DW$28, DW_AT_TI_end_column(0x01)
+     653                    .dwendentry
+     654                    .dwendtag $C$DW$28
+     655            
+     656 000000               .sect   ".text:PMM_getBufferedBandgapVoltageStatus"
+     657                    .clink
+     658                    .global PMM_getBufferedBandgapVoltageStatus
+     659            
+     660            $C$DW$30        .dwtag  DW_TAG_subprogram
+     661                    .dwattr $C$DW$30, DW_AT_name("PMM_getBufferedBandgapVoltageStatus")
+     662                    .dwattr $C$DW$30, DW_AT_low_pc(PMM_getBufferedBandgapVoltageStatus)
+     663                    .dwattr $C$DW$30, DW_AT_high_pc(0x00)
+     664                    .dwattr $C$DW$30, DW_AT_TI_symbol_name("PMM_getBufferedBandgapVoltageStatus")
+     665                    .dwattr $C$DW$30, DW_AT_external
+     666                    .dwattr $C$DW$30, DW_AT_type(*$C$DW$T$25)
+     667                    .dwattr $C$DW$30, DW_AT_TI_begin_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     668                    .dwattr $C$DW$30, DW_AT_TI_begin_line(0x65)
+     669                    .dwattr $C$DW$30, DW_AT_TI_begin_column(0x0a)
+     670                    .dwattr $C$DW$30, DW_AT_decl_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     671                    .dwattr $C$DW$30, DW_AT_decl_line(0x65)
+     672                    .dwattr $C$DW$30, DW_AT_decl_column(0x0a)
+     673                    .dwattr $C$DW$30, DW_AT_TI_max_frame_size(0x04)
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE   14
+
+     674                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 102,column 1,is_stmt,address PMM_getBuf
+     675            
+     676                    .dwfde $C$DW$CIE, PMM_getBufferedBandgapVoltageStatus
+     677            
+     678            ;*****************************************************************************
+     679            ;* FUNCTION NAME: PMM_getBufferedBandgapVoltageStatus                        *
+     680            ;*                                                                           *
+     681            ;*   Regs Modified     : SP,SR,r12                                           *
+     682            ;*   Regs Used         : SP,SR,r12                                           *
+     683            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     684            ;*****************************************************************************
+     685 000000       PMM_getBufferedBandgapVoltageStatus:
+     686            ;* --------------------------------------------------------------------------*
+     687                    .dwcfi  cfa_offset, 4
+     688                    .dwcfi  save_reg_to_mem, 16, -4
+     689                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 103,column 5,is_stmt,isa 0
+     690 000000 403C          MOV.W     #8192,r12             ; [] |103| 
+         000002 2000 
+     691 000004 F21C          AND.W     &0x124,r12            ; [] |103| 
+         000006 0124 
+     692                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 104,column 1,is_stmt,isa 0
+     693            $C$DW$31        .dwtag  DW_TAG_TI_branch
+     694                    .dwattr $C$DW$31, DW_AT_low_pc(0x00)
+     695                    .dwattr $C$DW$31, DW_AT_TI_return
+     696            
+     697 000008 0110          RETA      ; [] 
+     698                    ; [] 
+     699                    .dwattr $C$DW$30, DW_AT_TI_end_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     700                    .dwattr $C$DW$30, DW_AT_TI_end_line(0x68)
+     701                    .dwattr $C$DW$30, DW_AT_TI_end_column(0x01)
+     702                    .dwendentry
+     703                    .dwendtag $C$DW$30
+     704            
+     705 000000               .sect   ".text:PMM_getVariableReferenceVoltageStatus"
+     706                    .clink
+     707                    .global PMM_getVariableReferenceVoltageStatus
+     708            
+     709            $C$DW$32        .dwtag  DW_TAG_subprogram
+     710                    .dwattr $C$DW$32, DW_AT_name("PMM_getVariableReferenceVoltageStatus")
+     711                    .dwattr $C$DW$32, DW_AT_low_pc(PMM_getVariableReferenceVoltageStatus)
+     712                    .dwattr $C$DW$32, DW_AT_high_pc(0x00)
+     713                    .dwattr $C$DW$32, DW_AT_TI_symbol_name("PMM_getVariableReferenceVoltageStatus")
+     714                    .dwattr $C$DW$32, DW_AT_external
+     715                    .dwattr $C$DW$32, DW_AT_type(*$C$DW$T$25)
+     716                    .dwattr $C$DW$32, DW_AT_TI_begin_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     717                    .dwattr $C$DW$32, DW_AT_TI_begin_line(0x6a)
+     718                    .dwattr $C$DW$32, DW_AT_TI_begin_column(0x0a)
+     719                    .dwattr $C$DW$32, DW_AT_decl_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     720                    .dwattr $C$DW$32, DW_AT_decl_line(0x6a)
+     721                    .dwattr $C$DW$32, DW_AT_decl_column(0x0a)
+     722                    .dwattr $C$DW$32, DW_AT_TI_max_frame_size(0x04)
+     723                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 107,column 1,is_stmt,address PMM_getVar
+     724            
+     725                    .dwfde $C$DW$CIE, PMM_getVariableReferenceVoltageStatus
+     726            
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE   15
+
+     727            ;*****************************************************************************
+     728            ;* FUNCTION NAME: PMM_getVariableReferenceVoltageStatus                      *
+     729            ;*                                                                           *
+     730            ;*   Regs Modified     : SP,SR,r12                                           *
+     731            ;*   Regs Used         : SP,SR,r12                                           *
+     732            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     733            ;*****************************************************************************
+     734 000000       PMM_getVariableReferenceVoltageStatus:
+     735            ;* --------------------------------------------------------------------------*
+     736                    .dwcfi  cfa_offset, 4
+     737                    .dwcfi  save_reg_to_mem, 16, -4
+     738                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 108,column 5,is_stmt,isa 0
+     739 000000 403C          MOV.W     #4096,r12             ; [] |108| 
+         000002 1000 
+     740 000004 F21C          AND.W     &0x124,r12            ; [] |108| 
+         000006 0124 
+     741                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 109,column 1,is_stmt,isa 0
+     742            $C$DW$33        .dwtag  DW_TAG_TI_branch
+     743                    .dwattr $C$DW$33, DW_AT_low_pc(0x00)
+     744                    .dwattr $C$DW$33, DW_AT_TI_return
+     745            
+     746 000008 0110          RETA      ; [] 
+     747                    ; [] 
+     748                    .dwattr $C$DW$32, DW_AT_TI_end_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     749                    .dwattr $C$DW$32, DW_AT_TI_end_line(0x6d)
+     750                    .dwattr $C$DW$32, DW_AT_TI_end_column(0x01)
+     751                    .dwendentry
+     752                    .dwendtag $C$DW$32
+     753            
+     754 000000               .sect   ".text:PMM_disableTempSensor"
+     755                    .clink
+     756                    .global PMM_disableTempSensor
+     757            
+     758            $C$DW$34        .dwtag  DW_TAG_subprogram
+     759                    .dwattr $C$DW$34, DW_AT_name("PMM_disableTempSensor")
+     760                    .dwattr $C$DW$34, DW_AT_low_pc(PMM_disableTempSensor)
+     761                    .dwattr $C$DW$34, DW_AT_high_pc(0x00)
+     762                    .dwattr $C$DW$34, DW_AT_TI_symbol_name("PMM_disableTempSensor")
+     763                    .dwattr $C$DW$34, DW_AT_external
+     764                    .dwattr $C$DW$34, DW_AT_TI_begin_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     765                    .dwattr $C$DW$34, DW_AT_TI_begin_line(0x6f)
+     766                    .dwattr $C$DW$34, DW_AT_TI_begin_column(0x06)
+     767                    .dwattr $C$DW$34, DW_AT_decl_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     768                    .dwattr $C$DW$34, DW_AT_decl_line(0x6f)
+     769                    .dwattr $C$DW$34, DW_AT_decl_column(0x06)
+     770                    .dwattr $C$DW$34, DW_AT_TI_max_frame_size(0x04)
+     771                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 112,column 1,is_stmt,address PMM_disabl
+     772            
+     773                    .dwfde $C$DW$CIE, PMM_disableTempSensor
+     774            
+     775            ;*****************************************************************************
+     776            ;* FUNCTION NAME: PMM_disableTempSensor                                      *
+     777            ;*                                                                           *
+     778            ;*   Regs Modified     : SP                                                  *
+     779            ;*   Regs Used         : SP                                                  *
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE   16
+
+     780            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     781            ;*****************************************************************************
+     782 000000       PMM_disableTempSensor:
+     783            ;* --------------------------------------------------------------------------*
+     784                    .dwcfi  cfa_offset, 4
+     785                    .dwcfi  save_reg_to_mem, 16, -4
+     786                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 113,column 5,is_stmt,isa 0
+     787 000000 40F2          MOV.B     #165,&0x121           ; [] |113| 
+         000002 00A5 
+         000004 0121 
+     788                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 115,column 5,is_stmt,isa 0
+     789 000006 C2F2          BIC.B     #8,&0x124             ; [] |115| 
+         000008 0124 
+     790                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 117,column 5,is_stmt,isa 0
+     791 00000a 43C2          MOV.B     #0,&0x121             ; [] |117| 
+         00000c 0121 
+     792                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 118,column 1,is_stmt,isa 0
+     793            $C$DW$35        .dwtag  DW_TAG_TI_branch
+     794                    .dwattr $C$DW$35, DW_AT_low_pc(0x00)
+     795                    .dwattr $C$DW$35, DW_AT_TI_return
+     796            
+     797 00000e 0110          RETA      ; [] 
+     798                    ; [] 
+     799                    .dwattr $C$DW$34, DW_AT_TI_end_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     800                    .dwattr $C$DW$34, DW_AT_TI_end_line(0x76)
+     801                    .dwattr $C$DW$34, DW_AT_TI_end_column(0x01)
+     802                    .dwendentry
+     803                    .dwendtag $C$DW$34
+     804            
+     805 000000               .sect   ".text:PMM_enableTempSensor"
+     806                    .clink
+     807                    .global PMM_enableTempSensor
+     808            
+     809            $C$DW$36        .dwtag  DW_TAG_subprogram
+     810                    .dwattr $C$DW$36, DW_AT_name("PMM_enableTempSensor")
+     811                    .dwattr $C$DW$36, DW_AT_low_pc(PMM_enableTempSensor)
+     812                    .dwattr $C$DW$36, DW_AT_high_pc(0x00)
+     813                    .dwattr $C$DW$36, DW_AT_TI_symbol_name("PMM_enableTempSensor")
+     814                    .dwattr $C$DW$36, DW_AT_external
+     815                    .dwattr $C$DW$36, DW_AT_TI_begin_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     816                    .dwattr $C$DW$36, DW_AT_TI_begin_line(0x78)
+     817                    .dwattr $C$DW$36, DW_AT_TI_begin_column(0x06)
+     818                    .dwattr $C$DW$36, DW_AT_decl_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     819                    .dwattr $C$DW$36, DW_AT_decl_line(0x78)
+     820                    .dwattr $C$DW$36, DW_AT_decl_column(0x06)
+     821                    .dwattr $C$DW$36, DW_AT_TI_max_frame_size(0x04)
+     822                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 121,column 1,is_stmt,address PMM_enable
+     823            
+     824                    .dwfde $C$DW$CIE, PMM_enableTempSensor
+     825            
+     826            ;*****************************************************************************
+     827            ;* FUNCTION NAME: PMM_enableTempSensor                                       *
+     828            ;*                                                                           *
+     829            ;*   Regs Modified     : SP                                                  *
+     830            ;*   Regs Used         : SP                                                  *
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE   17
+
+     831            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     832            ;*****************************************************************************
+     833 000000       PMM_enableTempSensor:
+     834            ;* --------------------------------------------------------------------------*
+     835                    .dwcfi  cfa_offset, 4
+     836                    .dwcfi  save_reg_to_mem, 16, -4
+     837                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 122,column 5,is_stmt,isa 0
+     838 000000 40F2          MOV.B     #165,&0x121           ; [] |122| 
+         000002 00A5 
+         000004 0121 
+     839                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 124,column 5,is_stmt,isa 0
+     840 000006 D2F2          OR.B      #8,&0x124             ; [] |124| 
+         000008 0124 
+     841                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 126,column 5,is_stmt,isa 0
+     842 00000a 43C2          MOV.B     #0,&0x121             ; [] |126| 
+         00000c 0121 
+     843                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 127,column 1,is_stmt,isa 0
+     844            $C$DW$37        .dwtag  DW_TAG_TI_branch
+     845                    .dwattr $C$DW$37, DW_AT_low_pc(0x00)
+     846                    .dwattr $C$DW$37, DW_AT_TI_return
+     847            
+     848 00000e 0110          RETA      ; [] 
+     849                    ; [] 
+     850                    .dwattr $C$DW$36, DW_AT_TI_end_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     851                    .dwattr $C$DW$36, DW_AT_TI_end_line(0x7f)
+     852                    .dwattr $C$DW$36, DW_AT_TI_end_column(0x01)
+     853                    .dwendentry
+     854                    .dwendtag $C$DW$36
+     855            
+     856 000000               .sect   ".text:PMM_disableExternalReference"
+     857                    .clink
+     858                    .global PMM_disableExternalReference
+     859            
+     860            $C$DW$38        .dwtag  DW_TAG_subprogram
+     861                    .dwattr $C$DW$38, DW_AT_name("PMM_disableExternalReference")
+     862                    .dwattr $C$DW$38, DW_AT_low_pc(PMM_disableExternalReference)
+     863                    .dwattr $C$DW$38, DW_AT_high_pc(0x00)
+     864                    .dwattr $C$DW$38, DW_AT_TI_symbol_name("PMM_disableExternalReference")
+     865                    .dwattr $C$DW$38, DW_AT_external
+     866                    .dwattr $C$DW$38, DW_AT_TI_begin_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     867                    .dwattr $C$DW$38, DW_AT_TI_begin_line(0x81)
+     868                    .dwattr $C$DW$38, DW_AT_TI_begin_column(0x06)
+     869                    .dwattr $C$DW$38, DW_AT_decl_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     870                    .dwattr $C$DW$38, DW_AT_decl_line(0x81)
+     871                    .dwattr $C$DW$38, DW_AT_decl_column(0x06)
+     872                    .dwattr $C$DW$38, DW_AT_TI_max_frame_size(0x04)
+     873                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 130,column 1,is_stmt,address PMM_disabl
+     874            
+     875                    .dwfde $C$DW$CIE, PMM_disableExternalReference
+     876            
+     877            ;*****************************************************************************
+     878            ;* FUNCTION NAME: PMM_disableExternalReference                               *
+     879            ;*                                                                           *
+     880            ;*   Regs Modified     : SP                                                  *
+     881            ;*   Regs Used         : SP                                                  *
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE   18
+
+     882            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     883            ;*****************************************************************************
+     884 000000       PMM_disableExternalReference:
+     885            ;* --------------------------------------------------------------------------*
+     886                    .dwcfi  cfa_offset, 4
+     887                    .dwcfi  save_reg_to_mem, 16, -4
+     888                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 131,column 5,is_stmt,isa 0
+     889 000000 40F2          MOV.B     #165,&0x121           ; [] |131| 
+         000002 00A5 
+         000004 0121 
+     890                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 133,column 5,is_stmt,isa 0
+     891 000006 C3E2          BIC.B     #2,&0x124             ; [] |133| 
+         000008 0124 
+     892                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 135,column 5,is_stmt,isa 0
+     893 00000a 43C2          MOV.B     #0,&0x121             ; [] |135| 
+         00000c 0121 
+     894                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 136,column 1,is_stmt,isa 0
+     895            $C$DW$39        .dwtag  DW_TAG_TI_branch
+     896                    .dwattr $C$DW$39, DW_AT_low_pc(0x00)
+     897                    .dwattr $C$DW$39, DW_AT_TI_return
+     898            
+     899 00000e 0110          RETA      ; [] 
+     900                    ; [] 
+     901                    .dwattr $C$DW$38, DW_AT_TI_end_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     902                    .dwattr $C$DW$38, DW_AT_TI_end_line(0x88)
+     903                    .dwattr $C$DW$38, DW_AT_TI_end_column(0x01)
+     904                    .dwendentry
+     905                    .dwendtag $C$DW$38
+     906            
+     907 000000               .sect   ".text:PMM_enableExternalReference"
+     908                    .clink
+     909                    .global PMM_enableExternalReference
+     910            
+     911            $C$DW$40        .dwtag  DW_TAG_subprogram
+     912                    .dwattr $C$DW$40, DW_AT_name("PMM_enableExternalReference")
+     913                    .dwattr $C$DW$40, DW_AT_low_pc(PMM_enableExternalReference)
+     914                    .dwattr $C$DW$40, DW_AT_high_pc(0x00)
+     915                    .dwattr $C$DW$40, DW_AT_TI_symbol_name("PMM_enableExternalReference")
+     916                    .dwattr $C$DW$40, DW_AT_external
+     917                    .dwattr $C$DW$40, DW_AT_TI_begin_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     918                    .dwattr $C$DW$40, DW_AT_TI_begin_line(0x8a)
+     919                    .dwattr $C$DW$40, DW_AT_TI_begin_column(0x06)
+     920                    .dwattr $C$DW$40, DW_AT_decl_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     921                    .dwattr $C$DW$40, DW_AT_decl_line(0x8a)
+     922                    .dwattr $C$DW$40, DW_AT_decl_column(0x06)
+     923                    .dwattr $C$DW$40, DW_AT_TI_max_frame_size(0x04)
+     924                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 139,column 1,is_stmt,address PMM_enable
+     925            
+     926                    .dwfde $C$DW$CIE, PMM_enableExternalReference
+     927            
+     928            ;*****************************************************************************
+     929            ;* FUNCTION NAME: PMM_enableExternalReference                                *
+     930            ;*                                                                           *
+     931            ;*   Regs Modified     : SP                                                  *
+     932            ;*   Regs Used         : SP                                                  *
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE   19
+
+     933            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     934            ;*****************************************************************************
+     935 000000       PMM_enableExternalReference:
+     936            ;* --------------------------------------------------------------------------*
+     937                    .dwcfi  cfa_offset, 4
+     938                    .dwcfi  save_reg_to_mem, 16, -4
+     939                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 140,column 5,is_stmt,isa 0
+     940 000000 40F2          MOV.B     #165,&0x121           ; [] |140| 
+         000002 00A5 
+         000004 0121 
+     941                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 142,column 5,is_stmt,isa 0
+     942 000006 D3E2          OR.B      #2,&0x124             ; [] |142| 
+         000008 0124 
+     943                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 144,column 5,is_stmt,isa 0
+     944 00000a 43C2          MOV.B     #0,&0x121             ; [] |144| 
+         00000c 0121 
+     945                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 145,column 1,is_stmt,isa 0
+     946            $C$DW$41        .dwtag  DW_TAG_TI_branch
+     947                    .dwattr $C$DW$41, DW_AT_low_pc(0x00)
+     948                    .dwattr $C$DW$41, DW_AT_TI_return
+     949            
+     950 00000e 0110          RETA      ; [] 
+     951                    ; [] 
+     952                    .dwattr $C$DW$40, DW_AT_TI_end_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     953                    .dwattr $C$DW$40, DW_AT_TI_end_line(0x91)
+     954                    .dwattr $C$DW$40, DW_AT_TI_end_column(0x01)
+     955                    .dwendentry
+     956                    .dwendtag $C$DW$40
+     957            
+     958 000000               .sect   ".text:PMM_disableInternalReference"
+     959                    .clink
+     960                    .global PMM_disableInternalReference
+     961            
+     962            $C$DW$42        .dwtag  DW_TAG_subprogram
+     963                    .dwattr $C$DW$42, DW_AT_name("PMM_disableInternalReference")
+     964                    .dwattr $C$DW$42, DW_AT_low_pc(PMM_disableInternalReference)
+     965                    .dwattr $C$DW$42, DW_AT_high_pc(0x00)
+     966                    .dwattr $C$DW$42, DW_AT_TI_symbol_name("PMM_disableInternalReference")
+     967                    .dwattr $C$DW$42, DW_AT_external
+     968                    .dwattr $C$DW$42, DW_AT_TI_begin_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     969                    .dwattr $C$DW$42, DW_AT_TI_begin_line(0x93)
+     970                    .dwattr $C$DW$42, DW_AT_TI_begin_column(0x06)
+     971                    .dwattr $C$DW$42, DW_AT_decl_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+     972                    .dwattr $C$DW$42, DW_AT_decl_line(0x93)
+     973                    .dwattr $C$DW$42, DW_AT_decl_column(0x06)
+     974                    .dwattr $C$DW$42, DW_AT_TI_max_frame_size(0x04)
+     975                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 148,column 1,is_stmt,address PMM_disabl
+     976            
+     977                    .dwfde $C$DW$CIE, PMM_disableInternalReference
+     978            
+     979            ;*****************************************************************************
+     980            ;* FUNCTION NAME: PMM_disableInternalReference                               *
+     981            ;*                                                                           *
+     982            ;*   Regs Modified     : SP                                                  *
+     983            ;*   Regs Used         : SP                                                  *
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE   20
+
+     984            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+     985            ;*****************************************************************************
+     986 000000       PMM_disableInternalReference:
+     987            ;* --------------------------------------------------------------------------*
+     988                    .dwcfi  cfa_offset, 4
+     989                    .dwcfi  save_reg_to_mem, 16, -4
+     990                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 149,column 5,is_stmt,isa 0
+     991 000000 40F2          MOV.B     #165,&0x121           ; [] |149| 
+         000002 00A5 
+         000004 0121 
+     992                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 151,column 5,is_stmt,isa 0
+     993 000006 C3D2          BIC.B     #1,&0x124             ; [] |151| 
+         000008 0124 
+     994                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 153,column 5,is_stmt,isa 0
+     995 00000a 43C2          MOV.B     #0,&0x121             ; [] |153| 
+         00000c 0121 
+     996                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 154,column 1,is_stmt,isa 0
+     997            $C$DW$43        .dwtag  DW_TAG_TI_branch
+     998                    .dwattr $C$DW$43, DW_AT_low_pc(0x00)
+     999                    .dwattr $C$DW$43, DW_AT_TI_return
+    1000            
+    1001 00000e 0110          RETA      ; [] 
+    1002                    ; [] 
+    1003                    .dwattr $C$DW$42, DW_AT_TI_end_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+    1004                    .dwattr $C$DW$42, DW_AT_TI_end_line(0x9a)
+    1005                    .dwattr $C$DW$42, DW_AT_TI_end_column(0x01)
+    1006                    .dwendentry
+    1007                    .dwendtag $C$DW$42
+    1008            
+    1009 000000               .sect   ".text:PMM_enableInternalReference"
+    1010                    .clink
+    1011                    .global PMM_enableInternalReference
+    1012            
+    1013            $C$DW$44        .dwtag  DW_TAG_subprogram
+    1014                    .dwattr $C$DW$44, DW_AT_name("PMM_enableInternalReference")
+    1015                    .dwattr $C$DW$44, DW_AT_low_pc(PMM_enableInternalReference)
+    1016                    .dwattr $C$DW$44, DW_AT_high_pc(0x00)
+    1017                    .dwattr $C$DW$44, DW_AT_TI_symbol_name("PMM_enableInternalReference")
+    1018                    .dwattr $C$DW$44, DW_AT_external
+    1019                    .dwattr $C$DW$44, DW_AT_TI_begin_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+    1020                    .dwattr $C$DW$44, DW_AT_TI_begin_line(0x9c)
+    1021                    .dwattr $C$DW$44, DW_AT_TI_begin_column(0x06)
+    1022                    .dwattr $C$DW$44, DW_AT_decl_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+    1023                    .dwattr $C$DW$44, DW_AT_decl_line(0x9c)
+    1024                    .dwattr $C$DW$44, DW_AT_decl_column(0x06)
+    1025                    .dwattr $C$DW$44, DW_AT_TI_max_frame_size(0x04)
+    1026                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 157,column 1,is_stmt,address PMM_enable
+    1027            
+    1028                    .dwfde $C$DW$CIE, PMM_enableInternalReference
+    1029            
+    1030            ;*****************************************************************************
+    1031            ;* FUNCTION NAME: PMM_enableInternalReference                                *
+    1032            ;*                                                                           *
+    1033            ;*   Regs Modified     : SP                                                  *
+    1034            ;*   Regs Used         : SP                                                  *
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE   21
+
+    1035            ;*   Local Frame Size  : 0 Args + 0 Auto + 0 Save = 0 byte                   *
+    1036            ;*****************************************************************************
+    1037 000000       PMM_enableInternalReference:
+    1038            ;* --------------------------------------------------------------------------*
+    1039                    .dwcfi  cfa_offset, 4
+    1040                    .dwcfi  save_reg_to_mem, 16, -4
+    1041                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 158,column 5,is_stmt,isa 0
+    1042 000000 40F2          MOV.B     #165,&0x121           ; [] |158| 
+         000002 00A5 
+         000004 0121 
+    1043                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 160,column 5,is_stmt,isa 0
+    1044 000006 D3D2          OR.B      #1,&0x124             ; [] |160| 
+         000008 0124 
+    1045                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 162,column 5,is_stmt,isa 0
+    1046 00000a 43C2          MOV.B     #0,&0x121             ; [] |162| 
+         00000c 0121 
+    1047                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 163,column 1,is_stmt,isa 0
+    1048            $C$DW$45        .dwtag  DW_TAG_TI_branch
+    1049                    .dwattr $C$DW$45, DW_AT_low_pc(0x00)
+    1050                    .dwattr $C$DW$45, DW_AT_TI_return
+    1051            
+    1052 00000e 0110          RETA      ; [] 
+    1053                    ; [] 
+    1054                    .dwattr $C$DW$44, DW_AT_TI_end_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+    1055                    .dwattr $C$DW$44, DW_AT_TI_end_line(0xa3)
+    1056                    .dwattr $C$DW$44, DW_AT_TI_end_column(0x01)
+    1057                    .dwendentry
+    1058                    .dwendtag $C$DW$44
+    1059            
+    1060 000000               .sect   ".text:PMM_selectVoltageReference"
+    1061                    .clink
+    1062                    .global PMM_selectVoltageReference
+    1063            
+    1064            $C$DW$46        .dwtag  DW_TAG_subprogram
+    1065                    .dwattr $C$DW$46, DW_AT_name("PMM_selectVoltageReference")
+    1066                    .dwattr $C$DW$46, DW_AT_low_pc(PMM_selectVoltageReference)
+    1067                    .dwattr $C$DW$46, DW_AT_high_pc(0x00)
+    1068                    .dwattr $C$DW$46, DW_AT_TI_symbol_name("PMM_selectVoltageReference")
+    1069                    .dwattr $C$DW$46, DW_AT_external
+    1070                    .dwattr $C$DW$46, DW_AT_TI_begin_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+    1071                    .dwattr $C$DW$46, DW_AT_TI_begin_line(0xa5)
+    1072                    .dwattr $C$DW$46, DW_AT_TI_begin_column(0x06)
+    1073                    .dwattr $C$DW$46, DW_AT_decl_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+    1074                    .dwattr $C$DW$46, DW_AT_decl_line(0xa5)
+    1075                    .dwattr $C$DW$46, DW_AT_decl_column(0x06)
+    1076                    .dwattr $C$DW$46, DW_AT_TI_max_frame_size(0x06)
+    1077                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 165,column 48,is_stmt,address PMM_selec
+    1078            
+    1079                    .dwfde $C$DW$CIE, PMM_selectVoltageReference
+    1080            $C$DW$47        .dwtag  DW_TAG_formal_parameter
+    1081                    .dwattr $C$DW$47, DW_AT_name("refV")
+    1082                    .dwattr $C$DW$47, DW_AT_TI_symbol_name("refV")
+    1083                    .dwattr $C$DW$47, DW_AT_type(*$C$DW$T$25)
+    1084                    .dwattr $C$DW$47, DW_AT_location[DW_OP_reg12]
+    1085            
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE   22
+
+    1086            
+    1087            ;*****************************************************************************
+    1088            ;* FUNCTION NAME: PMM_selectVoltageReference                                 *
+    1089            ;*                                                                           *
+    1090            ;*   Regs Modified     : SP,SR                                               *
+    1091            ;*   Regs Used         : SP,SR,r12                                           *
+    1092            ;*   Local Frame Size  : 0 Args + 2 Auto + 0 Save = 2 byte                   *
+    1093            ;*****************************************************************************
+    1094 000000       PMM_selectVoltageReference:
+    1095            ;* --------------------------------------------------------------------------*
+    1096                    .dwcfi  cfa_offset, 4
+    1097                    .dwcfi  save_reg_to_mem, 16, -4
+    1098 000000 8321          SUB.W     #2,SP                 ; [] 
+    1099                    .dwcfi  cfa_offset, 6
+    1100            $C$DW$48        .dwtag  DW_TAG_variable
+    1101                    .dwattr $C$DW$48, DW_AT_name("refV")
+    1102                    .dwattr $C$DW$48, DW_AT_TI_symbol_name("refV")
+    1103                    .dwattr $C$DW$48, DW_AT_type(*$C$DW$T$25)
+    1104                    .dwattr $C$DW$48, DW_AT_location[DW_OP_breg1 0]
+    1105            
+    1106 000002 4C81          MOV.W     r12,0(SP)             ; [] |165| 
+         000004 0000 
+    1107                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 170,column 1,is_stmt,isa 0
+    1108 000006 5321          ADD.W     #2,SP                 ; [] 
+    1109                    .dwcfi  cfa_offset, 4
+    1110            $C$DW$49        .dwtag  DW_TAG_TI_branch
+    1111                    .dwattr $C$DW$49, DW_AT_low_pc(0x00)
+    1112                    .dwattr $C$DW$49, DW_AT_TI_return
+    1113            
+    1114 000008 0110          RETA      ; [] 
+    1115                    ; [] 
+    1116                    .dwattr $C$DW$46, DW_AT_TI_end_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+    1117                    .dwattr $C$DW$46, DW_AT_TI_end_line(0xaa)
+    1118                    .dwattr $C$DW$46, DW_AT_TI_end_column(0x01)
+    1119                    .dwendentry
+    1120                    .dwendtag $C$DW$46
+    1121            
+    1122 000000               .sect   ".text:PMM_setPowerMode"
+    1123                    .clink
+    1124                    .global PMM_setPowerMode
+    1125            
+    1126            $C$DW$50        .dwtag  DW_TAG_subprogram
+    1127                    .dwattr $C$DW$50, DW_AT_name("PMM_setPowerMode")
+    1128                    .dwattr $C$DW$50, DW_AT_low_pc(PMM_setPowerMode)
+    1129                    .dwattr $C$DW$50, DW_AT_high_pc(0x00)
+    1130                    .dwattr $C$DW$50, DW_AT_TI_symbol_name("PMM_setPowerMode")
+    1131                    .dwattr $C$DW$50, DW_AT_external
+    1132                    .dwattr $C$DW$50, DW_AT_TI_begin_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+    1133                    .dwattr $C$DW$50, DW_AT_TI_begin_line(0xac)
+    1134                    .dwattr $C$DW$50, DW_AT_TI_begin_column(0x06)
+    1135                    .dwattr $C$DW$50, DW_AT_decl_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+    1136                    .dwattr $C$DW$50, DW_AT_decl_line(0xac)
+    1137                    .dwattr $C$DW$50, DW_AT_decl_column(0x06)
+    1138                    .dwattr $C$DW$50, DW_AT_TI_max_frame_size(0x06)
+    1139                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 172,column 37,is_stmt,address PMM_setPo
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE   23
+
+    1140            
+    1141                    .dwfde $C$DW$CIE, PMM_setPowerMode
+    1142            $C$DW$51        .dwtag  DW_TAG_formal_parameter
+    1143                    .dwattr $C$DW$51, DW_AT_name("mode")
+    1144                    .dwattr $C$DW$51, DW_AT_TI_symbol_name("mode")
+    1145                    .dwattr $C$DW$51, DW_AT_type(*$C$DW$T$28)
+    1146                    .dwattr $C$DW$51, DW_AT_location[DW_OP_reg12]
+    1147            
+    1148            
+    1149            ;*****************************************************************************
+    1150            ;* FUNCTION NAME: PMM_setPowerMode                                           *
+    1151            ;*                                                                           *
+    1152            ;*   Regs Modified     : SP,SR                                               *
+    1153            ;*   Regs Used         : SP,SR,r12                                           *
+    1154            ;*   Local Frame Size  : 0 Args + 2 Auto + 0 Save = 2 byte                   *
+    1155            ;*****************************************************************************
+    1156 000000       PMM_setPowerMode:
+    1157            ;* --------------------------------------------------------------------------*
+    1158                    .dwcfi  cfa_offset, 4
+    1159                    .dwcfi  save_reg_to_mem, 16, -4
+    1160 000000 8321          SUB.W     #2,SP                 ; [] 
+    1161                    .dwcfi  cfa_offset, 6
+    1162            $C$DW$52        .dwtag  DW_TAG_variable
+    1163                    .dwattr $C$DW$52, DW_AT_name("mode")
+    1164                    .dwattr $C$DW$52, DW_AT_TI_symbol_name("mode")
+    1165                    .dwattr $C$DW$52, DW_AT_type(*$C$DW$T$28)
+    1166                    .dwattr $C$DW$52, DW_AT_location[DW_OP_breg1 0]
+    1167            
+    1168 000002 4CC1          MOV.B     r12,0(SP)             ; [] |172| 
+         000004 0000 
+    1169                    .dwpsn  file "../driverlib/MSP430FR2xx_4xx/pmm.c",line 177,column 1,is_stmt,isa 0
+    1170 000006 5321          ADD.W     #2,SP                 ; [] 
+    1171                    .dwcfi  cfa_offset, 4
+    1172            $C$DW$53        .dwtag  DW_TAG_TI_branch
+    1173                    .dwattr $C$DW$53, DW_AT_low_pc(0x00)
+    1174                    .dwattr $C$DW$53, DW_AT_TI_return
+    1175            
+    1176 000008 0110          RETA      ; [] 
+    1177                    ; [] 
+    1178                    .dwattr $C$DW$50, DW_AT_TI_end_file("../driverlib/MSP430FR2xx_4xx/pmm.c")
+    1179                    .dwattr $C$DW$50, DW_AT_TI_end_line(0xb1)
+    1180                    .dwattr $C$DW$50, DW_AT_TI_end_column(0x01)
+    1181                    .dwendentry
+    1182                    .dwendtag $C$DW$50
+    1183            
+    1184            ;*****************************************************************************
+    1185            ;* UNDEFINED EXTERNAL REFERENCES                                             *
+    1186            ;*****************************************************************************
+    1187                    .global PM5CTL0
+    1188            
+    1189            ;******************************************************************************
+    1190            ;* BUILD ATTRIBUTES                                                           *
+    1191            ;******************************************************************************
+    1192                    .battr "TI", Tag_File, 1, Tag_LOCKIO_INFO(2)
+    1193                    .battr "TI", Tag_File, 1, Tag_WAITSTATE_INFO(2)
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE   24
+
+    1194                    .battr "TI", Tag_File, 1, Tag_HW_MPY_ISR_INFO(1)
+    1195                    .battr "TI", Tag_File, 1, Tag_HW_MPY_INLINE_INFO(1)
+    1196                    .battr "mspabi", Tag_File, 1, Tag_enum_size(3)
+    1197            
+    1198            ;******************************************************************************
+    1199            ;* TYPE INFORMATION                                                           *
+    1200            ;******************************************************************************
+    1201            
+    1202            $C$DW$T$21      .dwtag  DW_TAG_structure_type
+    1203                    .dwattr $C$DW$T$21, DW_AT_byte_size(0x10)
+    1204            $C$DW$54        .dwtag  DW_TAG_member
+    1205                    .dwattr $C$DW$54, DW_AT_type(*$C$DW$T$14)
+    1206                    .dwattr $C$DW$54, DW_AT_name("__max_align1")
+    1207                    .dwattr $C$DW$54, DW_AT_TI_symbol_name("__max_align1")
+    1208                    .dwattr $C$DW$54, DW_AT_data_member_location[DW_OP_plus_uconst 0x0]
+    1209                    .dwattr $C$DW$54, DW_AT_accessibility(DW_ACCESS_public)
+    1210                    .dwattr $C$DW$54, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/i
+    1211                    .dwattr $C$DW$54, DW_AT_decl_line(0x7b)
+    1212                    .dwattr $C$DW$54, DW_AT_decl_column(0x0c)
+    1213            
+    1214            $C$DW$55        .dwtag  DW_TAG_member
+    1215                    .dwattr $C$DW$55, DW_AT_type(*$C$DW$T$18)
+    1216                    .dwattr $C$DW$55, DW_AT_name("__max_align2")
+    1217                    .dwattr $C$DW$55, DW_AT_TI_symbol_name("__max_align2")
+    1218                    .dwattr $C$DW$55, DW_AT_data_member_location[DW_OP_plus_uconst 0x8]
+    1219                    .dwattr $C$DW$55, DW_AT_accessibility(DW_ACCESS_public)
+    1220                    .dwattr $C$DW$55, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/i
+    1221                    .dwattr $C$DW$55, DW_AT_decl_line(0x7c)
+    1222                    .dwattr $C$DW$55, DW_AT_decl_column(0x0e)
+    1223            
+    1224                    .dwattr $C$DW$T$21, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1225                    .dwattr $C$DW$T$21, DW_AT_decl_line(0x7a)
+    1226                    .dwattr $C$DW$T$21, DW_AT_decl_column(0x10)
+    1227                    .dwendtag $C$DW$T$21
+    1228            
+    1229            $C$DW$T$22      .dwtag  DW_TAG_typedef
+    1230                    .dwattr $C$DW$T$22, DW_AT_name("__max_align_t")
+    1231                    .dwattr $C$DW$T$22, DW_AT_type(*$C$DW$T$21)
+    1232                    .dwattr $C$DW$T$22, DW_AT_language(DW_LANG_C)
+    1233                    .dwattr $C$DW$T$22, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1234                    .dwattr $C$DW$T$22, DW_AT_decl_line(0x7d)
+    1235                    .dwattr $C$DW$T$22, DW_AT_decl_column(0x03)
+    1236            
+    1237            $C$DW$T$2       .dwtag  DW_TAG_unspecified_type
+    1238                    .dwattr $C$DW$T$2, DW_AT_name("void")
+    1239            
+    1240            
+    1241            $C$DW$T$30      .dwtag  DW_TAG_subroutine_type
+    1242                    .dwattr $C$DW$T$30, DW_AT_language(DW_LANG_C)
+    1243                    .dwendtag $C$DW$T$30
+    1244            
+    1245            $C$DW$T$31      .dwtag  DW_TAG_pointer_type
+    1246                    .dwattr $C$DW$T$31, DW_AT_type(*$C$DW$T$30)
+    1247                    .dwattr $C$DW$T$31, DW_AT_address_class(0x14)
+    1248            
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE   25
+
+    1249            $C$DW$T$32      .dwtag  DW_TAG_typedef
+    1250                    .dwattr $C$DW$T$32, DW_AT_name("__SFR_FARPTR")
+    1251                    .dwattr $C$DW$T$32, DW_AT_type(*$C$DW$T$31)
+    1252                    .dwattr $C$DW$T$32, DW_AT_language(DW_LANG_C)
+    1253                    .dwattr $C$DW$T$32, DW_AT_decl_file("C:\ti\ccs1110\ccs\ccs_base\msp430\include\msp430fr4133.h"
+    1254                    .dwattr $C$DW$T$32, DW_AT_decl_line(0x46)
+    1255                    .dwattr $C$DW$T$32, DW_AT_decl_column(0x11)
+    1256            
+    1257            $C$DW$T$4       .dwtag  DW_TAG_base_type
+    1258                    .dwattr $C$DW$T$4, DW_AT_encoding(DW_ATE_boolean)
+    1259                    .dwattr $C$DW$T$4, DW_AT_name("bool")
+    1260                    .dwattr $C$DW$T$4, DW_AT_byte_size(0x01)
+    1261            
+    1262            $C$DW$T$5       .dwtag  DW_TAG_base_type
+    1263                    .dwattr $C$DW$T$5, DW_AT_encoding(DW_ATE_signed_char)
+    1264                    .dwattr $C$DW$T$5, DW_AT_name("signed char")
+    1265                    .dwattr $C$DW$T$5, DW_AT_byte_size(0x01)
+    1266            
+    1267            $C$DW$T$33      .dwtag  DW_TAG_typedef
+    1268                    .dwattr $C$DW$T$33, DW_AT_name("__int8_t")
+    1269                    .dwattr $C$DW$T$33, DW_AT_type(*$C$DW$T$5)
+    1270                    .dwattr $C$DW$T$33, DW_AT_language(DW_LANG_C)
+    1271                    .dwattr $C$DW$T$33, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1272                    .dwattr $C$DW$T$33, DW_AT_decl_line(0x36)
+    1273                    .dwattr $C$DW$T$33, DW_AT_decl_column(0x16)
+    1274            
+    1275            $C$DW$T$34      .dwtag  DW_TAG_typedef
+    1276                    .dwattr $C$DW$T$34, DW_AT_name("__int_least8_t")
+    1277                    .dwattr $C$DW$T$34, DW_AT_type(*$C$DW$T$33)
+    1278                    .dwattr $C$DW$T$34, DW_AT_language(DW_LANG_C)
+    1279                    .dwattr $C$DW$T$34, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1280                    .dwattr $C$DW$T$34, DW_AT_decl_line(0x5a)
+    1281                    .dwattr $C$DW$T$34, DW_AT_decl_column(0x12)
+    1282            
+    1283            $C$DW$T$35      .dwtag  DW_TAG_typedef
+    1284                    .dwattr $C$DW$T$35, DW_AT_name("int_least8_t")
+    1285                    .dwattr $C$DW$T$35, DW_AT_type(*$C$DW$T$34)
+    1286                    .dwattr $C$DW$T$35, DW_AT_language(DW_LANG_C)
+    1287                    .dwattr $C$DW$T$35, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1288                    .dwattr $C$DW$T$35, DW_AT_decl_line(0x2a)
+    1289                    .dwattr $C$DW$T$35, DW_AT_decl_column(0x19)
+    1290            
+    1291            $C$DW$T$36      .dwtag  DW_TAG_typedef
+    1292                    .dwattr $C$DW$T$36, DW_AT_name("int8_t")
+    1293                    .dwattr $C$DW$T$36, DW_AT_type(*$C$DW$T$33)
+    1294                    .dwattr $C$DW$T$36, DW_AT_language(DW_LANG_C)
+    1295                    .dwattr $C$DW$T$36, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1296                    .dwattr $C$DW$T$36, DW_AT_decl_line(0x25)
+    1297                    .dwattr $C$DW$T$36, DW_AT_decl_column(0x13)
+    1298            
+    1299            $C$DW$T$6       .dwtag  DW_TAG_base_type
+    1300                    .dwattr $C$DW$T$6, DW_AT_encoding(DW_ATE_unsigned_char)
+    1301                    .dwattr $C$DW$T$6, DW_AT_name("unsigned char")
+    1302                    .dwattr $C$DW$T$6, DW_AT_byte_size(0x01)
+    1303            
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE   26
+
+    1304            $C$DW$T$27      .dwtag  DW_TAG_typedef
+    1305                    .dwattr $C$DW$T$27, DW_AT_name("__uint8_t")
+    1306                    .dwattr $C$DW$T$27, DW_AT_type(*$C$DW$T$6)
+    1307                    .dwattr $C$DW$T$27, DW_AT_language(DW_LANG_C)
+    1308                    .dwattr $C$DW$T$27, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1309                    .dwattr $C$DW$T$27, DW_AT_decl_line(0x37)
+    1310                    .dwattr $C$DW$T$27, DW_AT_decl_column(0x18)
+    1311            
+    1312            $C$DW$T$37      .dwtag  DW_TAG_typedef
+    1313                    .dwattr $C$DW$T$37, DW_AT_name("__sa_family_t")
+    1314                    .dwattr $C$DW$T$37, DW_AT_type(*$C$DW$T$27)
+    1315                    .dwattr $C$DW$T$37, DW_AT_language(DW_LANG_C)
+    1316                    .dwattr $C$DW$T$37, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1317                    .dwattr $C$DW$T$37, DW_AT_decl_line(0x47)
+    1318                    .dwattr $C$DW$T$37, DW_AT_decl_column(0x13)
+    1319            
+    1320            $C$DW$T$38      .dwtag  DW_TAG_typedef
+    1321                    .dwattr $C$DW$T$38, DW_AT_name("__uint_least8_t")
+    1322                    .dwattr $C$DW$T$38, DW_AT_type(*$C$DW$T$27)
+    1323                    .dwattr $C$DW$T$38, DW_AT_language(DW_LANG_C)
+    1324                    .dwattr $C$DW$T$38, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1325                    .dwattr $C$DW$T$38, DW_AT_decl_line(0x74)
+    1326                    .dwattr $C$DW$T$38, DW_AT_decl_column(0x13)
+    1327            
+    1328            $C$DW$T$39      .dwtag  DW_TAG_typedef
+    1329                    .dwattr $C$DW$T$39, DW_AT_name("uint_least8_t")
+    1330                    .dwattr $C$DW$T$39, DW_AT_type(*$C$DW$T$38)
+    1331                    .dwattr $C$DW$T$39, DW_AT_language(DW_LANG_C)
+    1332                    .dwattr $C$DW$T$39, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1333                    .dwattr $C$DW$T$39, DW_AT_decl_line(0x2f)
+    1334                    .dwattr $C$DW$T$39, DW_AT_decl_column(0x1a)
+    1335            
+    1336            $C$DW$T$28      .dwtag  DW_TAG_typedef
+    1337                    .dwattr $C$DW$T$28, DW_AT_name("uint8_t")
+    1338                    .dwattr $C$DW$T$28, DW_AT_type(*$C$DW$T$27)
+    1339                    .dwattr $C$DW$T$28, DW_AT_language(DW_LANG_C)
+    1340                    .dwattr $C$DW$T$28, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1341                    .dwattr $C$DW$T$28, DW_AT_decl_line(0x3b)
+    1342                    .dwattr $C$DW$T$28, DW_AT_decl_column(0x14)
+    1343            
+    1344            $C$DW$T$7       .dwtag  DW_TAG_base_type
+    1345                    .dwattr $C$DW$T$7, DW_AT_encoding(DW_ATE_signed_char)
+    1346                    .dwattr $C$DW$T$7, DW_AT_name("wchar_t")
+    1347                    .dwattr $C$DW$T$7, DW_AT_byte_size(0x02)
+    1348            
+    1349            $C$DW$T$8       .dwtag  DW_TAG_base_type
+    1350                    .dwattr $C$DW$T$8, DW_AT_encoding(DW_ATE_signed)
+    1351                    .dwattr $C$DW$T$8, DW_AT_name("short")
+    1352                    .dwattr $C$DW$T$8, DW_AT_byte_size(0x02)
+    1353            
+    1354            $C$DW$T$9       .dwtag  DW_TAG_base_type
+    1355                    .dwattr $C$DW$T$9, DW_AT_encoding(DW_ATE_unsigned)
+    1356                    .dwattr $C$DW$T$9, DW_AT_name("unsigned short")
+    1357                    .dwattr $C$DW$T$9, DW_AT_byte_size(0x02)
+    1358            
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE   27
+
+    1359            $C$DW$T$10      .dwtag  DW_TAG_base_type
+    1360                    .dwattr $C$DW$T$10, DW_AT_encoding(DW_ATE_signed)
+    1361                    .dwattr $C$DW$T$10, DW_AT_name("int")
+    1362                    .dwattr $C$DW$T$10, DW_AT_byte_size(0x02)
+    1363            
+    1364            $C$DW$T$42      .dwtag  DW_TAG_typedef
+    1365                    .dwattr $C$DW$T$42, DW_AT_name("_Mbstatet")
+    1366                    .dwattr $C$DW$T$42, DW_AT_type(*$C$DW$T$10)
+    1367                    .dwattr $C$DW$T$42, DW_AT_language(DW_LANG_C)
+    1368                    .dwattr $C$DW$T$42, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1369                    .dwattr $C$DW$T$42, DW_AT_decl_line(0x8f)
+    1370                    .dwattr $C$DW$T$42, DW_AT_decl_column(0x0d)
+    1371            
+    1372            $C$DW$T$43      .dwtag  DW_TAG_typedef
+    1373                    .dwattr $C$DW$T$43, DW_AT_name("__mbstate_t")
+    1374                    .dwattr $C$DW$T$43, DW_AT_type(*$C$DW$T$42)
+    1375                    .dwattr $C$DW$T$43, DW_AT_language(DW_LANG_C)
+    1376                    .dwattr $C$DW$T$43, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1377                    .dwattr $C$DW$T$43, DW_AT_decl_line(0x92)
+    1378                    .dwattr $C$DW$T$43, DW_AT_decl_column(0x13)
+    1379            
+    1380            $C$DW$T$44      .dwtag  DW_TAG_typedef
+    1381                    .dwattr $C$DW$T$44, DW_AT_name("__accmode_t")
+    1382                    .dwattr $C$DW$T$44, DW_AT_type(*$C$DW$T$10)
+    1383                    .dwattr $C$DW$T$44, DW_AT_language(DW_LANG_C)
+    1384                    .dwattr $C$DW$T$44, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1385                    .dwattr $C$DW$T$44, DW_AT_decl_line(0x3b)
+    1386                    .dwattr $C$DW$T$44, DW_AT_decl_column(0x0e)
+    1387            
+    1388            $C$DW$T$45      .dwtag  DW_TAG_typedef
+    1389                    .dwattr $C$DW$T$45, DW_AT_name("__cpulevel_t")
+    1390                    .dwattr $C$DW$T$45, DW_AT_type(*$C$DW$T$10)
+    1391                    .dwattr $C$DW$T$45, DW_AT_language(DW_LANG_C)
+    1392                    .dwattr $C$DW$T$45, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1393                    .dwattr $C$DW$T$45, DW_AT_decl_line(0x50)
+    1394                    .dwattr $C$DW$T$45, DW_AT_decl_column(0x0e)
+    1395            
+    1396            $C$DW$T$46      .dwtag  DW_TAG_typedef
+    1397                    .dwattr $C$DW$T$46, DW_AT_name("__cpusetid_t")
+    1398                    .dwattr $C$DW$T$46, DW_AT_type(*$C$DW$T$10)
+    1399                    .dwattr $C$DW$T$46, DW_AT_language(DW_LANG_C)
+    1400                    .dwattr $C$DW$T$46, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1401                    .dwattr $C$DW$T$46, DW_AT_decl_line(0x51)
+    1402                    .dwattr $C$DW$T$46, DW_AT_decl_column(0x0e)
+    1403            
+    1404            $C$DW$T$47      .dwtag  DW_TAG_typedef
+    1405                    .dwattr $C$DW$T$47, DW_AT_name("__cpuwhich_t")
+    1406                    .dwattr $C$DW$T$47, DW_AT_type(*$C$DW$T$10)
+    1407                    .dwattr $C$DW$T$47, DW_AT_language(DW_LANG_C)
+    1408                    .dwattr $C$DW$T$47, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1409                    .dwattr $C$DW$T$47, DW_AT_decl_line(0x4f)
+    1410                    .dwattr $C$DW$T$47, DW_AT_decl_column(0x0e)
+    1411            
+    1412            $C$DW$T$48      .dwtag  DW_TAG_typedef
+    1413                    .dwattr $C$DW$T$48, DW_AT_name("__ct_rune_t")
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE   28
+
+    1414                    .dwattr $C$DW$T$48, DW_AT_type(*$C$DW$T$10)
+    1415                    .dwattr $C$DW$T$48, DW_AT_language(DW_LANG_C)
+    1416                    .dwattr $C$DW$T$48, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1417                    .dwattr $C$DW$T$48, DW_AT_decl_line(0x69)
+    1418                    .dwattr $C$DW$T$48, DW_AT_decl_column(0x0e)
+    1419            
+    1420            $C$DW$T$49      .dwtag  DW_TAG_typedef
+    1421                    .dwattr $C$DW$T$49, DW_AT_name("__rune_t")
+    1422                    .dwattr $C$DW$T$49, DW_AT_type(*$C$DW$T$48)
+    1423                    .dwattr $C$DW$T$49, DW_AT_language(DW_LANG_C)
+    1424                    .dwattr $C$DW$T$49, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1425                    .dwattr $C$DW$T$49, DW_AT_decl_line(0x6c)
+    1426                    .dwattr $C$DW$T$49, DW_AT_decl_column(0x15)
+    1427            
+    1428            $C$DW$T$50      .dwtag  DW_TAG_typedef
+    1429                    .dwattr $C$DW$T$50, DW_AT_name("__wint_t")
+    1430                    .dwattr $C$DW$T$50, DW_AT_type(*$C$DW$T$48)
+    1431                    .dwattr $C$DW$T$50, DW_AT_language(DW_LANG_C)
+    1432                    .dwattr $C$DW$T$50, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1433                    .dwattr $C$DW$T$50, DW_AT_decl_line(0x6d)
+    1434                    .dwattr $C$DW$T$50, DW_AT_decl_column(0x15)
+    1435            
+    1436            $C$DW$T$51      .dwtag  DW_TAG_typedef
+    1437                    .dwattr $C$DW$T$51, DW_AT_name("__int16_t")
+    1438                    .dwattr $C$DW$T$51, DW_AT_type(*$C$DW$T$10)
+    1439                    .dwattr $C$DW$T$51, DW_AT_language(DW_LANG_C)
+    1440                    .dwattr $C$DW$T$51, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1441                    .dwattr $C$DW$T$51, DW_AT_decl_line(0x38)
+    1442                    .dwattr $C$DW$T$51, DW_AT_decl_column(0x0f)
+    1443            
+    1444            $C$DW$T$52      .dwtag  DW_TAG_typedef
+    1445                    .dwattr $C$DW$T$52, DW_AT_name("__int_fast16_t")
+    1446                    .dwattr $C$DW$T$52, DW_AT_type(*$C$DW$T$51)
+    1447                    .dwattr $C$DW$T$52, DW_AT_language(DW_LANG_C)
+    1448                    .dwattr $C$DW$T$52, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1449                    .dwattr $C$DW$T$52, DW_AT_decl_line(0x57)
+    1450                    .dwattr $C$DW$T$52, DW_AT_decl_column(0x13)
+    1451            
+    1452            $C$DW$T$53      .dwtag  DW_TAG_typedef
+    1453                    .dwattr $C$DW$T$53, DW_AT_name("int_fast16_t")
+    1454                    .dwattr $C$DW$T$53, DW_AT_type(*$C$DW$T$52)
+    1455                    .dwattr $C$DW$T$53, DW_AT_language(DW_LANG_C)
+    1456                    .dwattr $C$DW$T$53, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1457                    .dwattr $C$DW$T$53, DW_AT_decl_line(0x35)
+    1458                    .dwattr $C$DW$T$53, DW_AT_decl_column(0x19)
+    1459            
+    1460            $C$DW$T$54      .dwtag  DW_TAG_typedef
+    1461                    .dwattr $C$DW$T$54, DW_AT_name("__int_fast8_t")
+    1462                    .dwattr $C$DW$T$54, DW_AT_type(*$C$DW$T$51)
+    1463                    .dwattr $C$DW$T$54, DW_AT_language(DW_LANG_C)
+    1464                    .dwattr $C$DW$T$54, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1465                    .dwattr $C$DW$T$54, DW_AT_decl_line(0x56)
+    1466                    .dwattr $C$DW$T$54, DW_AT_decl_column(0x13)
+    1467            
+    1468            $C$DW$T$55      .dwtag  DW_TAG_typedef
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE   29
+
+    1469                    .dwattr $C$DW$T$55, DW_AT_name("int_fast8_t")
+    1470                    .dwattr $C$DW$T$55, DW_AT_type(*$C$DW$T$54)
+    1471                    .dwattr $C$DW$T$55, DW_AT_language(DW_LANG_C)
+    1472                    .dwattr $C$DW$T$55, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1473                    .dwattr $C$DW$T$55, DW_AT_decl_line(0x34)
+    1474                    .dwattr $C$DW$T$55, DW_AT_decl_column(0x18)
+    1475            
+    1476            $C$DW$T$56      .dwtag  DW_TAG_typedef
+    1477                    .dwattr $C$DW$T$56, DW_AT_name("__int_least16_t")
+    1478                    .dwattr $C$DW$T$56, DW_AT_type(*$C$DW$T$51)
+    1479                    .dwattr $C$DW$T$56, DW_AT_language(DW_LANG_C)
+    1480                    .dwattr $C$DW$T$56, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1481                    .dwattr $C$DW$T$56, DW_AT_decl_line(0x5b)
+    1482                    .dwattr $C$DW$T$56, DW_AT_decl_column(0x13)
+    1483            
+    1484            $C$DW$T$57      .dwtag  DW_TAG_typedef
+    1485                    .dwattr $C$DW$T$57, DW_AT_name("int_least16_t")
+    1486                    .dwattr $C$DW$T$57, DW_AT_type(*$C$DW$T$56)
+    1487                    .dwattr $C$DW$T$57, DW_AT_language(DW_LANG_C)
+    1488                    .dwattr $C$DW$T$57, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1489                    .dwattr $C$DW$T$57, DW_AT_decl_line(0x2b)
+    1490                    .dwattr $C$DW$T$57, DW_AT_decl_column(0x1a)
+    1491            
+    1492            $C$DW$T$58      .dwtag  DW_TAG_typedef
+    1493                    .dwattr $C$DW$T$58, DW_AT_name("__register_t")
+    1494                    .dwattr $C$DW$T$58, DW_AT_type(*$C$DW$T$51)
+    1495                    .dwattr $C$DW$T$58, DW_AT_language(DW_LANG_C)
+    1496                    .dwattr $C$DW$T$58, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1497                    .dwattr $C$DW$T$58, DW_AT_decl_line(0x5f)
+    1498                    .dwattr $C$DW$T$58, DW_AT_decl_column(0x13)
+    1499            
+    1500            $C$DW$T$59      .dwtag  DW_TAG_typedef
+    1501                    .dwattr $C$DW$T$59, DW_AT_name("int16_t")
+    1502                    .dwattr $C$DW$T$59, DW_AT_type(*$C$DW$T$51)
+    1503                    .dwattr $C$DW$T$59, DW_AT_language(DW_LANG_C)
+    1504                    .dwattr $C$DW$T$59, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1505                    .dwattr $C$DW$T$59, DW_AT_decl_line(0x2b)
+    1506                    .dwattr $C$DW$T$59, DW_AT_decl_column(0x14)
+    1507            
+    1508            $C$DW$T$60      .dwtag  DW_TAG_typedef
+    1509                    .dwattr $C$DW$T$60, DW_AT_name("__nl_item")
+    1510                    .dwattr $C$DW$T$60, DW_AT_type(*$C$DW$T$10)
+    1511                    .dwattr $C$DW$T$60, DW_AT_language(DW_LANG_C)
+    1512                    .dwattr $C$DW$T$60, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1513                    .dwattr $C$DW$T$60, DW_AT_decl_line(0x3c)
+    1514                    .dwattr $C$DW$T$60, DW_AT_decl_column(0x0e)
+    1515            
+    1516            $C$DW$T$61      .dwtag  DW_TAG_typedef
+    1517                    .dwattr $C$DW$T$61, DW_AT_name("__ptrdiff_t")
+    1518                    .dwattr $C$DW$T$61, DW_AT_type(*$C$DW$T$10)
+    1519                    .dwattr $C$DW$T$61, DW_AT_language(DW_LANG_C)
+    1520                    .dwattr $C$DW$T$61, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1521                    .dwattr $C$DW$T$61, DW_AT_decl_line(0x5e)
+    1522                    .dwattr $C$DW$T$61, DW_AT_decl_column(0x1c)
+    1523            
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE   30
+
+    1524            $C$DW$T$11      .dwtag  DW_TAG_base_type
+    1525                    .dwattr $C$DW$T$11, DW_AT_encoding(DW_ATE_unsigned)
+    1526                    .dwattr $C$DW$T$11, DW_AT_name("unsigned int")
+    1527                    .dwattr $C$DW$T$11, DW_AT_byte_size(0x02)
+    1528            
+    1529            $C$DW$T$62      .dwtag  DW_TAG_typedef
+    1530                    .dwattr $C$DW$T$62, DW_AT_name("___wchar_t")
+    1531                    .dwattr $C$DW$T$62, DW_AT_type(*$C$DW$T$11)
+    1532                    .dwattr $C$DW$T$62, DW_AT_language(DW_LANG_C)
+    1533                    .dwattr $C$DW$T$62, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1534                    .dwattr $C$DW$T$62, DW_AT_decl_line(0x7d)
+    1535                    .dwattr $C$DW$T$62, DW_AT_decl_column(0x1a)
+    1536            
+    1537            $C$DW$T$63      .dwtag  DW_TAG_volatile_type
+    1538                    .dwattr $C$DW$T$63, DW_AT_type(*$C$DW$T$11)
+    1539            
+    1540            $C$DW$T$64      .dwtag  DW_TAG_typedef
+    1541                    .dwattr $C$DW$T$64, DW_AT_name("__size_t")
+    1542                    .dwattr $C$DW$T$64, DW_AT_type(*$C$DW$T$11)
+    1543                    .dwattr $C$DW$T$64, DW_AT_language(DW_LANG_C)
+    1544                    .dwattr $C$DW$T$64, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1545                    .dwattr $C$DW$T$64, DW_AT_decl_line(0x61)
+    1546                    .dwattr $C$DW$T$64, DW_AT_decl_column(0x19)
+    1547            
+    1548            $C$DW$T$24      .dwtag  DW_TAG_typedef
+    1549                    .dwattr $C$DW$T$24, DW_AT_name("__uint16_t")
+    1550                    .dwattr $C$DW$T$24, DW_AT_type(*$C$DW$T$11)
+    1551                    .dwattr $C$DW$T$24, DW_AT_language(DW_LANG_C)
+    1552                    .dwattr $C$DW$T$24, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1553                    .dwattr $C$DW$T$24, DW_AT_decl_line(0x39)
+    1554                    .dwattr $C$DW$T$24, DW_AT_decl_column(0x17)
+    1555            
+    1556            $C$DW$T$65      .dwtag  DW_TAG_typedef
+    1557                    .dwattr $C$DW$T$65, DW_AT_name("__mode_t")
+    1558                    .dwattr $C$DW$T$65, DW_AT_type(*$C$DW$T$24)
+    1559                    .dwattr $C$DW$T$65, DW_AT_language(DW_LANG_C)
+    1560                    .dwattr $C$DW$T$65, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1561                    .dwattr $C$DW$T$65, DW_AT_decl_line(0x3a)
+    1562                    .dwattr $C$DW$T$65, DW_AT_decl_column(0x14)
+    1563            
+    1564            $C$DW$T$66      .dwtag  DW_TAG_typedef
+    1565                    .dwattr $C$DW$T$66, DW_AT_name("__u_register_t")
+    1566                    .dwattr $C$DW$T$66, DW_AT_type(*$C$DW$T$24)
+    1567                    .dwattr $C$DW$T$66, DW_AT_language(DW_LANG_C)
+    1568                    .dwattr $C$DW$T$66, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1569                    .dwattr $C$DW$T$66, DW_AT_decl_line(0x78)
+    1570                    .dwattr $C$DW$T$66, DW_AT_decl_column(0x14)
+    1571            
+    1572            $C$DW$T$67      .dwtag  DW_TAG_typedef
+    1573                    .dwattr $C$DW$T$67, DW_AT_name("__uint_fast16_t")
+    1574                    .dwattr $C$DW$T$67, DW_AT_type(*$C$DW$T$24)
+    1575                    .dwattr $C$DW$T$67, DW_AT_language(DW_LANG_C)
+    1576                    .dwattr $C$DW$T$67, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1577                    .dwattr $C$DW$T$67, DW_AT_decl_line(0x71)
+    1578                    .dwattr $C$DW$T$67, DW_AT_decl_column(0x14)
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE   31
+
+    1579            
+    1580            $C$DW$T$68      .dwtag  DW_TAG_typedef
+    1581                    .dwattr $C$DW$T$68, DW_AT_name("uint_fast16_t")
+    1582                    .dwattr $C$DW$T$68, DW_AT_type(*$C$DW$T$67)
+    1583                    .dwattr $C$DW$T$68, DW_AT_language(DW_LANG_C)
+    1584                    .dwattr $C$DW$T$68, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1585                    .dwattr $C$DW$T$68, DW_AT_decl_line(0x3a)
+    1586                    .dwattr $C$DW$T$68, DW_AT_decl_column(0x1a)
+    1587            
+    1588            $C$DW$T$69      .dwtag  DW_TAG_typedef
+    1589                    .dwattr $C$DW$T$69, DW_AT_name("__uint_fast8_t")
+    1590                    .dwattr $C$DW$T$69, DW_AT_type(*$C$DW$T$24)
+    1591                    .dwattr $C$DW$T$69, DW_AT_language(DW_LANG_C)
+    1592                    .dwattr $C$DW$T$69, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1593                    .dwattr $C$DW$T$69, DW_AT_decl_line(0x70)
+    1594                    .dwattr $C$DW$T$69, DW_AT_decl_column(0x14)
+    1595            
+    1596            $C$DW$T$70      .dwtag  DW_TAG_typedef
+    1597                    .dwattr $C$DW$T$70, DW_AT_name("uint_fast8_t")
+    1598                    .dwattr $C$DW$T$70, DW_AT_type(*$C$DW$T$69)
+    1599                    .dwattr $C$DW$T$70, DW_AT_language(DW_LANG_C)
+    1600                    .dwattr $C$DW$T$70, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1601                    .dwattr $C$DW$T$70, DW_AT_decl_line(0x39)
+    1602                    .dwattr $C$DW$T$70, DW_AT_decl_column(0x19)
+    1603            
+    1604            $C$DW$T$71      .dwtag  DW_TAG_typedef
+    1605                    .dwattr $C$DW$T$71, DW_AT_name("__uint_least16_t")
+    1606                    .dwattr $C$DW$T$71, DW_AT_type(*$C$DW$T$24)
+    1607                    .dwattr $C$DW$T$71, DW_AT_language(DW_LANG_C)
+    1608                    .dwattr $C$DW$T$71, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1609                    .dwattr $C$DW$T$71, DW_AT_decl_line(0x75)
+    1610                    .dwattr $C$DW$T$71, DW_AT_decl_column(0x14)
+    1611            
+    1612            $C$DW$T$72      .dwtag  DW_TAG_typedef
+    1613                    .dwattr $C$DW$T$72, DW_AT_name("__char16_t")
+    1614                    .dwattr $C$DW$T$72, DW_AT_type(*$C$DW$T$71)
+    1615                    .dwattr $C$DW$T$72, DW_AT_language(DW_LANG_C)
+    1616                    .dwattr $C$DW$T$72, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1617                    .dwattr $C$DW$T$72, DW_AT_decl_line(0x71)
+    1618                    .dwattr $C$DW$T$72, DW_AT_decl_column(0x1a)
+    1619            
+    1620            $C$DW$T$73      .dwtag  DW_TAG_typedef
+    1621                    .dwattr $C$DW$T$73, DW_AT_name("uint_least16_t")
+    1622                    .dwattr $C$DW$T$73, DW_AT_type(*$C$DW$T$71)
+    1623                    .dwattr $C$DW$T$73, DW_AT_language(DW_LANG_C)
+    1624                    .dwattr $C$DW$T$73, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1625                    .dwattr $C$DW$T$73, DW_AT_decl_line(0x30)
+    1626                    .dwattr $C$DW$T$73, DW_AT_decl_column(0x1a)
+    1627            
+    1628            $C$DW$T$25      .dwtag  DW_TAG_typedef
+    1629                    .dwattr $C$DW$T$25, DW_AT_name("uint16_t")
+    1630                    .dwattr $C$DW$T$25, DW_AT_type(*$C$DW$T$24)
+    1631                    .dwattr $C$DW$T$25, DW_AT_language(DW_LANG_C)
+    1632                    .dwattr $C$DW$T$25, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1633                    .dwattr $C$DW$T$25, DW_AT_decl_line(0x41)
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE   32
+
+    1634                    .dwattr $C$DW$T$25, DW_AT_decl_column(0x15)
+    1635            
+    1636            $C$DW$T$78      .dwtag  DW_TAG_typedef
+    1637                    .dwattr $C$DW$T$78, DW_AT_name("__useconds_t")
+    1638                    .dwattr $C$DW$T$78, DW_AT_type(*$C$DW$T$11)
+    1639                    .dwattr $C$DW$T$78, DW_AT_language(DW_LANG_C)
+    1640                    .dwattr $C$DW$T$78, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1641                    .dwattr $C$DW$T$78, DW_AT_decl_line(0x4e)
+    1642                    .dwattr $C$DW$T$78, DW_AT_decl_column(0x16)
+    1643            
+    1644            $C$DW$T$12      .dwtag  DW_TAG_base_type
+    1645                    .dwattr $C$DW$T$12, DW_AT_encoding(DW_ATE_signed)
+    1646                    .dwattr $C$DW$T$12, DW_AT_name("long")
+    1647                    .dwattr $C$DW$T$12, DW_AT_byte_size(0x04)
+    1648            
+    1649            $C$DW$T$79      .dwtag  DW_TAG_typedef
+    1650                    .dwattr $C$DW$T$79, DW_AT_name("__int32_t")
+    1651                    .dwattr $C$DW$T$79, DW_AT_type(*$C$DW$T$12)
+    1652                    .dwattr $C$DW$T$79, DW_AT_language(DW_LANG_C)
+    1653                    .dwattr $C$DW$T$79, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1654                    .dwattr $C$DW$T$79, DW_AT_decl_line(0x3a)
+    1655                    .dwattr $C$DW$T$79, DW_AT_decl_column(0x10)
+    1656            
+    1657            $C$DW$T$80      .dwtag  DW_TAG_typedef
+    1658                    .dwattr $C$DW$T$80, DW_AT_name("__blksize_t")
+    1659                    .dwattr $C$DW$T$80, DW_AT_type(*$C$DW$T$79)
+    1660                    .dwattr $C$DW$T$80, DW_AT_language(DW_LANG_C)
+    1661                    .dwattr $C$DW$T$80, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1662                    .dwattr $C$DW$T$80, DW_AT_decl_line(0x2f)
+    1663                    .dwattr $C$DW$T$80, DW_AT_decl_column(0x13)
+    1664            
+    1665            $C$DW$T$81      .dwtag  DW_TAG_typedef
+    1666                    .dwattr $C$DW$T$81, DW_AT_name("__clockid_t")
+    1667                    .dwattr $C$DW$T$81, DW_AT_type(*$C$DW$T$79)
+    1668                    .dwattr $C$DW$T$81, DW_AT_language(DW_LANG_C)
+    1669                    .dwattr $C$DW$T$81, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1670                    .dwattr $C$DW$T$81, DW_AT_decl_line(0x31)
+    1671                    .dwattr $C$DW$T$81, DW_AT_decl_column(0x13)
+    1672            
+    1673            $C$DW$T$82      .dwtag  DW_TAG_typedef
+    1674                    .dwattr $C$DW$T$82, DW_AT_name("__critical_t")
+    1675                    .dwattr $C$DW$T$82, DW_AT_type(*$C$DW$T$79)
+    1676                    .dwattr $C$DW$T$82, DW_AT_language(DW_LANG_C)
+    1677                    .dwattr $C$DW$T$82, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1678                    .dwattr $C$DW$T$82, DW_AT_decl_line(0x4b)
+    1679                    .dwattr $C$DW$T$82, DW_AT_decl_column(0x13)
+    1680            
+    1681            $C$DW$T$83      .dwtag  DW_TAG_typedef
+    1682                    .dwattr $C$DW$T$83, DW_AT_name("__int_fast32_t")
+    1683                    .dwattr $C$DW$T$83, DW_AT_type(*$C$DW$T$79)
+    1684                    .dwattr $C$DW$T$83, DW_AT_language(DW_LANG_C)
+    1685                    .dwattr $C$DW$T$83, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1686                    .dwattr $C$DW$T$83, DW_AT_decl_line(0x58)
+    1687                    .dwattr $C$DW$T$83, DW_AT_decl_column(0x13)
+    1688            
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE   33
+
+    1689            $C$DW$T$84      .dwtag  DW_TAG_typedef
+    1690                    .dwattr $C$DW$T$84, DW_AT_name("int_fast32_t")
+    1691                    .dwattr $C$DW$T$84, DW_AT_type(*$C$DW$T$83)
+    1692                    .dwattr $C$DW$T$84, DW_AT_language(DW_LANG_C)
+    1693                    .dwattr $C$DW$T$84, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1694                    .dwattr $C$DW$T$84, DW_AT_decl_line(0x36)
+    1695                    .dwattr $C$DW$T$84, DW_AT_decl_column(0x19)
+    1696            
+    1697            $C$DW$T$85      .dwtag  DW_TAG_typedef
+    1698                    .dwattr $C$DW$T$85, DW_AT_name("__int_least32_t")
+    1699                    .dwattr $C$DW$T$85, DW_AT_type(*$C$DW$T$79)
+    1700                    .dwattr $C$DW$T$85, DW_AT_language(DW_LANG_C)
+    1701                    .dwattr $C$DW$T$85, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1702                    .dwattr $C$DW$T$85, DW_AT_decl_line(0x5c)
+    1703                    .dwattr $C$DW$T$85, DW_AT_decl_column(0x13)
+    1704            
+    1705            $C$DW$T$86      .dwtag  DW_TAG_typedef
+    1706                    .dwattr $C$DW$T$86, DW_AT_name("int_least32_t")
+    1707                    .dwattr $C$DW$T$86, DW_AT_type(*$C$DW$T$85)
+    1708                    .dwattr $C$DW$T$86, DW_AT_language(DW_LANG_C)
+    1709                    .dwattr $C$DW$T$86, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1710                    .dwattr $C$DW$T$86, DW_AT_decl_line(0x2c)
+    1711                    .dwattr $C$DW$T$86, DW_AT_decl_column(0x1a)
+    1712            
+    1713            $C$DW$T$87      .dwtag  DW_TAG_typedef
+    1714                    .dwattr $C$DW$T$87, DW_AT_name("__intfptr_t")
+    1715                    .dwattr $C$DW$T$87, DW_AT_type(*$C$DW$T$79)
+    1716                    .dwattr $C$DW$T$87, DW_AT_language(DW_LANG_C)
+    1717                    .dwattr $C$DW$T$87, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1718                    .dwattr $C$DW$T$87, DW_AT_decl_line(0x4e)
+    1719                    .dwattr $C$DW$T$87, DW_AT_decl_column(0x13)
+    1720            
+    1721            $C$DW$T$88      .dwtag  DW_TAG_typedef
+    1722                    .dwattr $C$DW$T$88, DW_AT_name("__intptr_t")
+    1723                    .dwattr $C$DW$T$88, DW_AT_type(*$C$DW$T$79)
+    1724                    .dwattr $C$DW$T$88, DW_AT_language(DW_LANG_C)
+    1725                    .dwattr $C$DW$T$88, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1726                    .dwattr $C$DW$T$88, DW_AT_decl_line(0x51)
+    1727                    .dwattr $C$DW$T$88, DW_AT_decl_column(0x13)
+    1728            
+    1729            $C$DW$T$89      .dwtag  DW_TAG_typedef
+    1730                    .dwattr $C$DW$T$89, DW_AT_name("intptr_t")
+    1731                    .dwattr $C$DW$T$89, DW_AT_type(*$C$DW$T$88)
+    1732                    .dwattr $C$DW$T$89, DW_AT_language(DW_LANG_C)
+    1733                    .dwattr $C$DW$T$89, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1734                    .dwattr $C$DW$T$89, DW_AT_decl_line(0x50)
+    1735                    .dwattr $C$DW$T$89, DW_AT_decl_column(0x15)
+    1736            
+    1737            $C$DW$T$90      .dwtag  DW_TAG_typedef
+    1738                    .dwattr $C$DW$T$90, DW_AT_name("__lwpid_t")
+    1739                    .dwattr $C$DW$T$90, DW_AT_type(*$C$DW$T$79)
+    1740                    .dwattr $C$DW$T$90, DW_AT_language(DW_LANG_C)
+    1741                    .dwattr $C$DW$T$90, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1742                    .dwattr $C$DW$T$90, DW_AT_decl_line(0x39)
+    1743                    .dwattr $C$DW$T$90, DW_AT_decl_column(0x13)
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE   34
+
+    1744            
+    1745            $C$DW$T$91      .dwtag  DW_TAG_typedef
+    1746                    .dwattr $C$DW$T$91, DW_AT_name("__pid_t")
+    1747                    .dwattr $C$DW$T$91, DW_AT_type(*$C$DW$T$79)
+    1748                    .dwattr $C$DW$T$91, DW_AT_language(DW_LANG_C)
+    1749                    .dwattr $C$DW$T$91, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1750                    .dwattr $C$DW$T$91, DW_AT_decl_line(0x40)
+    1751                    .dwattr $C$DW$T$91, DW_AT_decl_column(0x13)
+    1752            
+    1753            $C$DW$T$92      .dwtag  DW_TAG_typedef
+    1754                    .dwattr $C$DW$T$92, DW_AT_name("__segsz_t")
+    1755                    .dwattr $C$DW$T$92, DW_AT_type(*$C$DW$T$79)
+    1756                    .dwattr $C$DW$T$92, DW_AT_language(DW_LANG_C)
+    1757                    .dwattr $C$DW$T$92, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1758                    .dwattr $C$DW$T$92, DW_AT_decl_line(0x60)
+    1759                    .dwattr $C$DW$T$92, DW_AT_decl_column(0x13)
+    1760            
+    1761            $C$DW$T$93      .dwtag  DW_TAG_typedef
+    1762                    .dwattr $C$DW$T$93, DW_AT_name("__ssize_t")
+    1763                    .dwattr $C$DW$T$93, DW_AT_type(*$C$DW$T$79)
+    1764                    .dwattr $C$DW$T$93, DW_AT_language(DW_LANG_C)
+    1765                    .dwattr $C$DW$T$93, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1766                    .dwattr $C$DW$T$93, DW_AT_decl_line(0x62)
+    1767                    .dwattr $C$DW$T$93, DW_AT_decl_column(0x13)
+    1768            
+    1769            $C$DW$T$94      .dwtag  DW_TAG_typedef
+    1770                    .dwattr $C$DW$T$94, DW_AT_name("int32_t")
+    1771                    .dwattr $C$DW$T$94, DW_AT_type(*$C$DW$T$79)
+    1772                    .dwattr $C$DW$T$94, DW_AT_language(DW_LANG_C)
+    1773                    .dwattr $C$DW$T$94, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1774                    .dwattr $C$DW$T$94, DW_AT_decl_line(0x30)
+    1775                    .dwattr $C$DW$T$94, DW_AT_decl_column(0x14)
+    1776            
+    1777            $C$DW$T$95      .dwtag  DW_TAG_typedef
+    1778                    .dwattr $C$DW$T$95, DW_AT_name("__key_t")
+    1779                    .dwattr $C$DW$T$95, DW_AT_type(*$C$DW$T$12)
+    1780                    .dwattr $C$DW$T$95, DW_AT_language(DW_LANG_C)
+    1781                    .dwattr $C$DW$T$95, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1782                    .dwattr $C$DW$T$95, DW_AT_decl_line(0x38)
+    1783                    .dwattr $C$DW$T$95, DW_AT_decl_column(0x0f)
+    1784            
+    1785            $C$DW$T$96      .dwtag  DW_TAG_typedef
+    1786                    .dwattr $C$DW$T$96, DW_AT_name("__suseconds_t")
+    1787                    .dwattr $C$DW$T$96, DW_AT_type(*$C$DW$T$12)
+    1788                    .dwattr $C$DW$T$96, DW_AT_language(DW_LANG_C)
+    1789                    .dwattr $C$DW$T$96, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1790                    .dwattr $C$DW$T$96, DW_AT_decl_line(0x4a)
+    1791                    .dwattr $C$DW$T$96, DW_AT_decl_column(0x0f)
+    1792            
+    1793            $C$DW$T$97      .dwtag  DW_TAG_typedef
+    1794                    .dwattr $C$DW$T$97, DW_AT_name("_off_t")
+    1795                    .dwattr $C$DW$T$97, DW_AT_type(*$C$DW$T$12)
+    1796                    .dwattr $C$DW$T$97, DW_AT_language(DW_LANG_C)
+    1797                    .dwattr $C$DW$T$97, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1798                    .dwattr $C$DW$T$97, DW_AT_decl_line(0x8d)
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE   35
+
+    1799                    .dwattr $C$DW$T$97, DW_AT_decl_column(0x12)
+    1800            
+    1801            $C$DW$T$98      .dwtag  DW_TAG_typedef
+    1802                    .dwattr $C$DW$T$98, DW_AT_name("__off_t")
+    1803                    .dwattr $C$DW$T$98, DW_AT_type(*$C$DW$T$97)
+    1804                    .dwattr $C$DW$T$98, DW_AT_language(DW_LANG_C)
+    1805                    .dwattr $C$DW$T$98, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1806                    .dwattr $C$DW$T$98, DW_AT_decl_line(0x3e)
+    1807                    .dwattr $C$DW$T$98, DW_AT_decl_column(0x18)
+    1808            
+    1809            $C$DW$T$13      .dwtag  DW_TAG_base_type
+    1810                    .dwattr $C$DW$T$13, DW_AT_encoding(DW_ATE_unsigned)
+    1811                    .dwattr $C$DW$T$13, DW_AT_name("unsigned long")
+    1812                    .dwattr $C$DW$T$13, DW_AT_byte_size(0x04)
+    1813            
+    1814            $C$DW$T$99      .dwtag  DW_TAG_typedef
+    1815                    .dwattr $C$DW$T$99, DW_AT_name("__uint32_t")
+    1816                    .dwattr $C$DW$T$99, DW_AT_type(*$C$DW$T$13)
+    1817                    .dwattr $C$DW$T$99, DW_AT_language(DW_LANG_C)
+    1818                    .dwattr $C$DW$T$99, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    1819                    .dwattr $C$DW$T$99, DW_AT_decl_line(0x3b)
+    1820                    .dwattr $C$DW$T$99, DW_AT_decl_column(0x18)
+    1821            
+    1822            $C$DW$T$100     .dwtag  DW_TAG_typedef
+    1823                    .dwattr $C$DW$T$100, DW_AT_name("__clock_t")
+    1824                    .dwattr $C$DW$T$100, DW_AT_type(*$C$DW$T$99)
+    1825                    .dwattr $C$DW$T$100, DW_AT_language(DW_LANG_C)
+    1826                    .dwattr $C$DW$T$100, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    1827                    .dwattr $C$DW$T$100, DW_AT_decl_line(0x4a)
+    1828                    .dwattr $C$DW$T$100, DW_AT_decl_column(0x14)
+    1829            
+    1830            $C$DW$T$101     .dwtag  DW_TAG_typedef
+    1831                    .dwattr $C$DW$T$101, DW_AT_name("__fflags_t")
+    1832                    .dwattr $C$DW$T$101, DW_AT_type(*$C$DW$T$99)
+    1833                    .dwattr $C$DW$T$101, DW_AT_language(DW_LANG_C)
+    1834                    .dwattr $C$DW$T$101, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    1835                    .dwattr $C$DW$T$101, DW_AT_decl_line(0x32)
+    1836                    .dwattr $C$DW$T$101, DW_AT_decl_column(0x14)
+    1837            
+    1838            $C$DW$T$102     .dwtag  DW_TAG_typedef
+    1839                    .dwattr $C$DW$T$102, DW_AT_name("__fixpt_t")
+    1840                    .dwattr $C$DW$T$102, DW_AT_type(*$C$DW$T$99)
+    1841                    .dwattr $C$DW$T$102, DW_AT_language(DW_LANG_C)
+    1842                    .dwattr $C$DW$T$102, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    1843                    .dwattr $C$DW$T$102, DW_AT_decl_line(0x81)
+    1844                    .dwattr $C$DW$T$102, DW_AT_decl_column(0x14)
+    1845            
+    1846            $C$DW$T$103     .dwtag  DW_TAG_typedef
+    1847                    .dwattr $C$DW$T$103, DW_AT_name("__gid_t")
+    1848                    .dwattr $C$DW$T$103, DW_AT_type(*$C$DW$T$99)
+    1849                    .dwattr $C$DW$T$103, DW_AT_language(DW_LANG_C)
+    1850                    .dwattr $C$DW$T$103, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    1851                    .dwattr $C$DW$T$103, DW_AT_decl_line(0x35)
+    1852                    .dwattr $C$DW$T$103, DW_AT_decl_column(0x14)
+    1853            
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE   36
+
+    1854            $C$DW$T$104     .dwtag  DW_TAG_typedef
+    1855                    .dwattr $C$DW$T$104, DW_AT_name("__socklen_t")
+    1856                    .dwattr $C$DW$T$104, DW_AT_type(*$C$DW$T$99)
+    1857                    .dwattr $C$DW$T$104, DW_AT_language(DW_LANG_C)
+    1858                    .dwattr $C$DW$T$104, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    1859                    .dwattr $C$DW$T$104, DW_AT_decl_line(0x49)
+    1860                    .dwattr $C$DW$T$104, DW_AT_decl_column(0x14)
+    1861            
+    1862            $C$DW$T$105     .dwtag  DW_TAG_typedef
+    1863                    .dwattr $C$DW$T$105, DW_AT_name("__time_t")
+    1864                    .dwattr $C$DW$T$105, DW_AT_type(*$C$DW$T$99)
+    1865                    .dwattr $C$DW$T$105, DW_AT_language(DW_LANG_C)
+    1866                    .dwattr $C$DW$T$105, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    1867                    .dwattr $C$DW$T$105, DW_AT_decl_line(0x66)
+    1868                    .dwattr $C$DW$T$105, DW_AT_decl_column(0x19)
+    1869            
+    1870            $C$DW$T$106     .dwtag  DW_TAG_typedef
+    1871                    .dwattr $C$DW$T$106, DW_AT_name("__uid_t")
+    1872                    .dwattr $C$DW$T$106, DW_AT_type(*$C$DW$T$99)
+    1873                    .dwattr $C$DW$T$106, DW_AT_language(DW_LANG_C)
+    1874                    .dwattr $C$DW$T$106, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    1875                    .dwattr $C$DW$T$106, DW_AT_decl_line(0x4d)
+    1876                    .dwattr $C$DW$T$106, DW_AT_decl_column(0x14)
+    1877            
+    1878            $C$DW$T$107     .dwtag  DW_TAG_typedef
+    1879                    .dwattr $C$DW$T$107, DW_AT_name("__uint_fast32_t")
+    1880                    .dwattr $C$DW$T$107, DW_AT_type(*$C$DW$T$99)
+    1881                    .dwattr $C$DW$T$107, DW_AT_language(DW_LANG_C)
+    1882                    .dwattr $C$DW$T$107, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    1883                    .dwattr $C$DW$T$107, DW_AT_decl_line(0x72)
+    1884                    .dwattr $C$DW$T$107, DW_AT_decl_column(0x14)
+    1885            
+    1886            $C$DW$T$108     .dwtag  DW_TAG_typedef
+    1887                    .dwattr $C$DW$T$108, DW_AT_name("uint_fast32_t")
+    1888                    .dwattr $C$DW$T$108, DW_AT_type(*$C$DW$T$107)
+    1889                    .dwattr $C$DW$T$108, DW_AT_language(DW_LANG_C)
+    1890                    .dwattr $C$DW$T$108, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    1891                    .dwattr $C$DW$T$108, DW_AT_decl_line(0x3b)
+    1892                    .dwattr $C$DW$T$108, DW_AT_decl_column(0x1a)
+    1893            
+    1894            $C$DW$T$109     .dwtag  DW_TAG_typedef
+    1895                    .dwattr $C$DW$T$109, DW_AT_name("__uint_least32_t")
+    1896                    .dwattr $C$DW$T$109, DW_AT_type(*$C$DW$T$99)
+    1897                    .dwattr $C$DW$T$109, DW_AT_language(DW_LANG_C)
+    1898                    .dwattr $C$DW$T$109, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    1899                    .dwattr $C$DW$T$109, DW_AT_decl_line(0x76)
+    1900                    .dwattr $C$DW$T$109, DW_AT_decl_column(0x14)
+    1901            
+    1902            $C$DW$T$110     .dwtag  DW_TAG_typedef
+    1903                    .dwattr $C$DW$T$110, DW_AT_name("__char32_t")
+    1904                    .dwattr $C$DW$T$110, DW_AT_type(*$C$DW$T$109)
+    1905                    .dwattr $C$DW$T$110, DW_AT_language(DW_LANG_C)
+    1906                    .dwattr $C$DW$T$110, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    1907                    .dwattr $C$DW$T$110, DW_AT_decl_line(0x72)
+    1908                    .dwattr $C$DW$T$110, DW_AT_decl_column(0x1a)
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE   37
+
+    1909            
+    1910            $C$DW$T$111     .dwtag  DW_TAG_typedef
+    1911                    .dwattr $C$DW$T$111, DW_AT_name("uint_least32_t")
+    1912                    .dwattr $C$DW$T$111, DW_AT_type(*$C$DW$T$109)
+    1913                    .dwattr $C$DW$T$111, DW_AT_language(DW_LANG_C)
+    1914                    .dwattr $C$DW$T$111, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    1915                    .dwattr $C$DW$T$111, DW_AT_decl_line(0x31)
+    1916                    .dwattr $C$DW$T$111, DW_AT_decl_column(0x1a)
+    1917            
+    1918            $C$DW$T$112     .dwtag  DW_TAG_typedef
+    1919                    .dwattr $C$DW$T$112, DW_AT_name("__uintfptr_t")
+    1920                    .dwattr $C$DW$T$112, DW_AT_type(*$C$DW$T$99)
+    1921                    .dwattr $C$DW$T$112, DW_AT_language(DW_LANG_C)
+    1922                    .dwattr $C$DW$T$112, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    1923                    .dwattr $C$DW$T$112, DW_AT_decl_line(0x68)
+    1924                    .dwattr $C$DW$T$112, DW_AT_decl_column(0x14)
+    1925            
+    1926            $C$DW$T$113     .dwtag  DW_TAG_typedef
+    1927                    .dwattr $C$DW$T$113, DW_AT_name("__uintptr_t")
+    1928                    .dwattr $C$DW$T$113, DW_AT_type(*$C$DW$T$99)
+    1929                    .dwattr $C$DW$T$113, DW_AT_language(DW_LANG_C)
+    1930                    .dwattr $C$DW$T$113, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    1931                    .dwattr $C$DW$T$113, DW_AT_decl_line(0x6b)
+    1932                    .dwattr $C$DW$T$113, DW_AT_decl_column(0x14)
+    1933            
+    1934            $C$DW$T$114     .dwtag  DW_TAG_typedef
+    1935                    .dwattr $C$DW$T$114, DW_AT_name("uintptr_t")
+    1936                    .dwattr $C$DW$T$114, DW_AT_type(*$C$DW$T$113)
+    1937                    .dwattr $C$DW$T$114, DW_AT_language(DW_LANG_C)
+    1938                    .dwattr $C$DW$T$114, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    1939                    .dwattr $C$DW$T$114, DW_AT_decl_line(0x54)
+    1940                    .dwattr $C$DW$T$114, DW_AT_decl_column(0x16)
+    1941            
+    1942            $C$DW$T$115     .dwtag  DW_TAG_typedef
+    1943                    .dwattr $C$DW$T$115, DW_AT_name("__vm_offset_t")
+    1944                    .dwattr $C$DW$T$115, DW_AT_type(*$C$DW$T$99)
+    1945                    .dwattr $C$DW$T$115, DW_AT_language(DW_LANG_C)
+    1946                    .dwattr $C$DW$T$115, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    1947                    .dwattr $C$DW$T$115, DW_AT_decl_line(0x79)
+    1948                    .dwattr $C$DW$T$115, DW_AT_decl_column(0x14)
+    1949            
+    1950            $C$DW$T$116     .dwtag  DW_TAG_typedef
+    1951                    .dwattr $C$DW$T$116, DW_AT_name("__vm_paddr_t")
+    1952                    .dwattr $C$DW$T$116, DW_AT_type(*$C$DW$T$99)
+    1953                    .dwattr $C$DW$T$116, DW_AT_language(DW_LANG_C)
+    1954                    .dwattr $C$DW$T$116, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    1955                    .dwattr $C$DW$T$116, DW_AT_decl_line(0x7a)
+    1956                    .dwattr $C$DW$T$116, DW_AT_decl_column(0x14)
+    1957            
+    1958            $C$DW$T$117     .dwtag  DW_TAG_typedef
+    1959                    .dwattr $C$DW$T$117, DW_AT_name("__vm_size_t")
+    1960                    .dwattr $C$DW$T$117, DW_AT_type(*$C$DW$T$99)
+    1961                    .dwattr $C$DW$T$117, DW_AT_language(DW_LANG_C)
+    1962                    .dwattr $C$DW$T$117, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    1963                    .dwattr $C$DW$T$117, DW_AT_decl_line(0x7b)
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE   38
+
+    1964                    .dwattr $C$DW$T$117, DW_AT_decl_column(0x14)
+    1965            
+    1966            $C$DW$T$118     .dwtag  DW_TAG_typedef
+    1967                    .dwattr $C$DW$T$118, DW_AT_name("uint32_t")
+    1968                    .dwattr $C$DW$T$118, DW_AT_type(*$C$DW$T$99)
+    1969                    .dwattr $C$DW$T$118, DW_AT_language(DW_LANG_C)
+    1970                    .dwattr $C$DW$T$118, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    1971                    .dwattr $C$DW$T$118, DW_AT_decl_line(0x46)
+    1972                    .dwattr $C$DW$T$118, DW_AT_decl_column(0x15)
+    1973            
+    1974            $C$DW$T$14      .dwtag  DW_TAG_base_type
+    1975                    .dwattr $C$DW$T$14, DW_AT_encoding(DW_ATE_signed)
+    1976                    .dwattr $C$DW$T$14, DW_AT_name("long long")
+    1977                    .dwattr $C$DW$T$14, DW_AT_byte_size(0x08)
+    1978            
+    1979            $C$DW$T$119     .dwtag  DW_TAG_typedef
+    1980                    .dwattr $C$DW$T$119, DW_AT_name("__int64_t")
+    1981                    .dwattr $C$DW$T$119, DW_AT_type(*$C$DW$T$14)
+    1982                    .dwattr $C$DW$T$119, DW_AT_language(DW_LANG_C)
+    1983                    .dwattr $C$DW$T$119, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    1984                    .dwattr $C$DW$T$119, DW_AT_decl_line(0x40)
+    1985                    .dwattr $C$DW$T$119, DW_AT_decl_column(0x14)
+    1986            
+    1987            $C$DW$T$120     .dwtag  DW_TAG_typedef
+    1988                    .dwattr $C$DW$T$120, DW_AT_name("__blkcnt_t")
+    1989                    .dwattr $C$DW$T$120, DW_AT_type(*$C$DW$T$119)
+    1990                    .dwattr $C$DW$T$120, DW_AT_language(DW_LANG_C)
+    1991                    .dwattr $C$DW$T$120, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    1992                    .dwattr $C$DW$T$120, DW_AT_decl_line(0x30)
+    1993                    .dwattr $C$DW$T$120, DW_AT_decl_column(0x13)
+    1994            
+    1995            $C$DW$T$121     .dwtag  DW_TAG_typedef
+    1996                    .dwattr $C$DW$T$121, DW_AT_name("__id_t")
+    1997                    .dwattr $C$DW$T$121, DW_AT_type(*$C$DW$T$119)
+    1998                    .dwattr $C$DW$T$121, DW_AT_language(DW_LANG_C)
+    1999                    .dwattr $C$DW$T$121, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    2000                    .dwattr $C$DW$T$121, DW_AT_decl_line(0x36)
+    2001                    .dwattr $C$DW$T$121, DW_AT_decl_column(0x13)
+    2002            
+    2003            $C$DW$T$122     .dwtag  DW_TAG_typedef
+    2004                    .dwattr $C$DW$T$122, DW_AT_name("__int_fast64_t")
+    2005                    .dwattr $C$DW$T$122, DW_AT_type(*$C$DW$T$119)
+    2006                    .dwattr $C$DW$T$122, DW_AT_language(DW_LANG_C)
+    2007                    .dwattr $C$DW$T$122, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    2008                    .dwattr $C$DW$T$122, DW_AT_decl_line(0x59)
+    2009                    .dwattr $C$DW$T$122, DW_AT_decl_column(0x13)
+    2010            
+    2011            $C$DW$T$123     .dwtag  DW_TAG_typedef
+    2012                    .dwattr $C$DW$T$123, DW_AT_name("int_fast64_t")
+    2013                    .dwattr $C$DW$T$123, DW_AT_type(*$C$DW$T$122)
+    2014                    .dwattr $C$DW$T$123, DW_AT_language(DW_LANG_C)
+    2015                    .dwattr $C$DW$T$123, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    2016                    .dwattr $C$DW$T$123, DW_AT_decl_line(0x37)
+    2017                    .dwattr $C$DW$T$123, DW_AT_decl_column(0x19)
+    2018            
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE   39
+
+    2019            $C$DW$T$124     .dwtag  DW_TAG_typedef
+    2020                    .dwattr $C$DW$T$124, DW_AT_name("__int_least64_t")
+    2021                    .dwattr $C$DW$T$124, DW_AT_type(*$C$DW$T$119)
+    2022                    .dwattr $C$DW$T$124, DW_AT_language(DW_LANG_C)
+    2023                    .dwattr $C$DW$T$124, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    2024                    .dwattr $C$DW$T$124, DW_AT_decl_line(0x5d)
+    2025                    .dwattr $C$DW$T$124, DW_AT_decl_column(0x13)
+    2026            
+    2027            $C$DW$T$125     .dwtag  DW_TAG_typedef
+    2028                    .dwattr $C$DW$T$125, DW_AT_name("int_least64_t")
+    2029                    .dwattr $C$DW$T$125, DW_AT_type(*$C$DW$T$124)
+    2030                    .dwattr $C$DW$T$125, DW_AT_language(DW_LANG_C)
+    2031                    .dwattr $C$DW$T$125, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    2032                    .dwattr $C$DW$T$125, DW_AT_decl_line(0x2d)
+    2033                    .dwattr $C$DW$T$125, DW_AT_decl_column(0x1a)
+    2034            
+    2035            $C$DW$T$126     .dwtag  DW_TAG_typedef
+    2036                    .dwattr $C$DW$T$126, DW_AT_name("__intmax_t")
+    2037                    .dwattr $C$DW$T$126, DW_AT_type(*$C$DW$T$119)
+    2038                    .dwattr $C$DW$T$126, DW_AT_language(DW_LANG_C)
+    2039                    .dwattr $C$DW$T$126, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    2040                    .dwattr $C$DW$T$126, DW_AT_decl_line(0x4f)
+    2041                    .dwattr $C$DW$T$126, DW_AT_decl_column(0x13)
+    2042            
+    2043            $C$DW$T$127     .dwtag  DW_TAG_typedef
+    2044                    .dwattr $C$DW$T$127, DW_AT_name("intmax_t")
+    2045                    .dwattr $C$DW$T$127, DW_AT_type(*$C$DW$T$126)
+    2046                    .dwattr $C$DW$T$127, DW_AT_language(DW_LANG_C)
+    2047                    .dwattr $C$DW$T$127, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    2048                    .dwattr $C$DW$T$127, DW_AT_decl_line(0x58)
+    2049                    .dwattr $C$DW$T$127, DW_AT_decl_column(0x15)
+    2050            
+    2051            $C$DW$T$128     .dwtag  DW_TAG_typedef
+    2052                    .dwattr $C$DW$T$128, DW_AT_name("__off64_t")
+    2053                    .dwattr $C$DW$T$128, DW_AT_type(*$C$DW$T$119)
+    2054                    .dwattr $C$DW$T$128, DW_AT_language(DW_LANG_C)
+    2055                    .dwattr $C$DW$T$128, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    2056                    .dwattr $C$DW$T$128, DW_AT_decl_line(0x3f)
+    2057                    .dwattr $C$DW$T$128, DW_AT_decl_column(0x13)
+    2058            
+    2059            $C$DW$T$129     .dwtag  DW_TAG_typedef
+    2060                    .dwattr $C$DW$T$129, DW_AT_name("__rlim_t")
+    2061                    .dwattr $C$DW$T$129, DW_AT_type(*$C$DW$T$119)
+    2062                    .dwattr $C$DW$T$129, DW_AT_language(DW_LANG_C)
+    2063                    .dwattr $C$DW$T$129, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    2064                    .dwattr $C$DW$T$129, DW_AT_decl_line(0x41)
+    2065                    .dwattr $C$DW$T$129, DW_AT_decl_column(0x13)
+    2066            
+    2067            $C$DW$T$130     .dwtag  DW_TAG_typedef
+    2068                    .dwattr $C$DW$T$130, DW_AT_name("int64_t")
+    2069                    .dwattr $C$DW$T$130, DW_AT_type(*$C$DW$T$119)
+    2070                    .dwattr $C$DW$T$130, DW_AT_language(DW_LANG_C)
+    2071                    .dwattr $C$DW$T$130, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    2072                    .dwattr $C$DW$T$130, DW_AT_decl_line(0x35)
+    2073                    .dwattr $C$DW$T$130, DW_AT_decl_column(0x14)
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE   40
+
+    2074            
+    2075            $C$DW$T$15      .dwtag  DW_TAG_base_type
+    2076                    .dwattr $C$DW$T$15, DW_AT_encoding(DW_ATE_unsigned)
+    2077                    .dwattr $C$DW$T$15, DW_AT_name("unsigned long long")
+    2078                    .dwattr $C$DW$T$15, DW_AT_byte_size(0x08)
+    2079            
+    2080            $C$DW$T$131     .dwtag  DW_TAG_typedef
+    2081                    .dwattr $C$DW$T$131, DW_AT_name("__uint64_t")
+    2082                    .dwattr $C$DW$T$131, DW_AT_type(*$C$DW$T$15)
+    2083                    .dwattr $C$DW$T$131, DW_AT_language(DW_LANG_C)
+    2084                    .dwattr $C$DW$T$131, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    2085                    .dwattr $C$DW$T$131, DW_AT_decl_line(0x45)
+    2086                    .dwattr $C$DW$T$131, DW_AT_decl_column(0x1c)
+    2087            
+    2088            $C$DW$T$132     .dwtag  DW_TAG_typedef
+    2089                    .dwattr $C$DW$T$132, DW_AT_name("__dev_t")
+    2090                    .dwattr $C$DW$T$132, DW_AT_type(*$C$DW$T$131)
+    2091                    .dwattr $C$DW$T$132, DW_AT_language(DW_LANG_C)
+    2092                    .dwattr $C$DW$T$132, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    2093                    .dwattr $C$DW$T$132, DW_AT_decl_line(0x7f)
+    2094                    .dwattr $C$DW$T$132, DW_AT_decl_column(0x14)
+    2095            
+    2096            $C$DW$T$133     .dwtag  DW_TAG_typedef
+    2097                    .dwattr $C$DW$T$133, DW_AT_name("__fsblkcnt_t")
+    2098                    .dwattr $C$DW$T$133, DW_AT_type(*$C$DW$T$131)
+    2099                    .dwattr $C$DW$T$133, DW_AT_language(DW_LANG_C)
+    2100                    .dwattr $C$DW$T$133, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    2101                    .dwattr $C$DW$T$133, DW_AT_decl_line(0x33)
+    2102                    .dwattr $C$DW$T$133, DW_AT_decl_column(0x14)
+    2103            
+    2104            $C$DW$T$134     .dwtag  DW_TAG_typedef
+    2105                    .dwattr $C$DW$T$134, DW_AT_name("__fsfilcnt_t")
+    2106                    .dwattr $C$DW$T$134, DW_AT_type(*$C$DW$T$131)
+    2107                    .dwattr $C$DW$T$134, DW_AT_language(DW_LANG_C)
+    2108                    .dwattr $C$DW$T$134, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    2109                    .dwattr $C$DW$T$134, DW_AT_decl_line(0x34)
+    2110                    .dwattr $C$DW$T$134, DW_AT_decl_column(0x14)
+    2111            
+    2112            $C$DW$T$135     .dwtag  DW_TAG_typedef
+    2113                    .dwattr $C$DW$T$135, DW_AT_name("__ino_t")
+    2114                    .dwattr $C$DW$T$135, DW_AT_type(*$C$DW$T$131)
+    2115                    .dwattr $C$DW$T$135, DW_AT_language(DW_LANG_C)
+    2116                    .dwattr $C$DW$T$135, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    2117                    .dwattr $C$DW$T$135, DW_AT_decl_line(0x37)
+    2118                    .dwattr $C$DW$T$135, DW_AT_decl_column(0x14)
+    2119            
+    2120            $C$DW$T$136     .dwtag  DW_TAG_typedef
+    2121                    .dwattr $C$DW$T$136, DW_AT_name("__nlink_t")
+    2122                    .dwattr $C$DW$T$136, DW_AT_type(*$C$DW$T$131)
+    2123                    .dwattr $C$DW$T$136, DW_AT_language(DW_LANG_C)
+    2124                    .dwattr $C$DW$T$136, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    2125                    .dwattr $C$DW$T$136, DW_AT_decl_line(0x3d)
+    2126                    .dwattr $C$DW$T$136, DW_AT_decl_column(0x14)
+    2127            
+    2128            $C$DW$T$137     .dwtag  DW_TAG_typedef
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE   41
+
+    2129                    .dwattr $C$DW$T$137, DW_AT_name("__uint_fast64_t")
+    2130                    .dwattr $C$DW$T$137, DW_AT_type(*$C$DW$T$131)
+    2131                    .dwattr $C$DW$T$137, DW_AT_language(DW_LANG_C)
+    2132                    .dwattr $C$DW$T$137, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    2133                    .dwattr $C$DW$T$137, DW_AT_decl_line(0x73)
+    2134                    .dwattr $C$DW$T$137, DW_AT_decl_column(0x14)
+    2135            
+    2136            $C$DW$T$138     .dwtag  DW_TAG_typedef
+    2137                    .dwattr $C$DW$T$138, DW_AT_name("uint_fast64_t")
+    2138                    .dwattr $C$DW$T$138, DW_AT_type(*$C$DW$T$137)
+    2139                    .dwattr $C$DW$T$138, DW_AT_language(DW_LANG_C)
+    2140                    .dwattr $C$DW$T$138, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    2141                    .dwattr $C$DW$T$138, DW_AT_decl_line(0x3c)
+    2142                    .dwattr $C$DW$T$138, DW_AT_decl_column(0x1a)
+    2143            
+    2144            $C$DW$T$139     .dwtag  DW_TAG_typedef
+    2145                    .dwattr $C$DW$T$139, DW_AT_name("__uint_least64_t")
+    2146                    .dwattr $C$DW$T$139, DW_AT_type(*$C$DW$T$131)
+    2147                    .dwattr $C$DW$T$139, DW_AT_language(DW_LANG_C)
+    2148                    .dwattr $C$DW$T$139, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    2149                    .dwattr $C$DW$T$139, DW_AT_decl_line(0x77)
+    2150                    .dwattr $C$DW$T$139, DW_AT_decl_column(0x14)
+    2151            
+    2152            $C$DW$T$140     .dwtag  DW_TAG_typedef
+    2153                    .dwattr $C$DW$T$140, DW_AT_name("uint_least64_t")
+    2154                    .dwattr $C$DW$T$140, DW_AT_type(*$C$DW$T$139)
+    2155                    .dwattr $C$DW$T$140, DW_AT_language(DW_LANG_C)
+    2156                    .dwattr $C$DW$T$140, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    2157                    .dwattr $C$DW$T$140, DW_AT_decl_line(0x32)
+    2158                    .dwattr $C$DW$T$140, DW_AT_decl_column(0x1a)
+    2159            
+    2160            $C$DW$T$141     .dwtag  DW_TAG_typedef
+    2161                    .dwattr $C$DW$T$141, DW_AT_name("__uintmax_t")
+    2162                    .dwattr $C$DW$T$141, DW_AT_type(*$C$DW$T$131)
+    2163                    .dwattr $C$DW$T$141, DW_AT_language(DW_LANG_C)
+    2164                    .dwattr $C$DW$T$141, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    2165                    .dwattr $C$DW$T$141, DW_AT_decl_line(0x69)
+    2166                    .dwattr $C$DW$T$141, DW_AT_decl_column(0x14)
+    2167            
+    2168            $C$DW$T$142     .dwtag  DW_TAG_typedef
+    2169                    .dwattr $C$DW$T$142, DW_AT_name("__rman_res_t")
+    2170                    .dwattr $C$DW$T$142, DW_AT_type(*$C$DW$T$141)
+    2171                    .dwattr $C$DW$T$142, DW_AT_language(DW_LANG_C)
+    2172                    .dwattr $C$DW$T$142, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    2173                    .dwattr $C$DW$T$142, DW_AT_decl_line(0x9a)
+    2174                    .dwattr $C$DW$T$142, DW_AT_decl_column(0x19)
+    2175            
+    2176            $C$DW$T$143     .dwtag  DW_TAG_typedef
+    2177                    .dwattr $C$DW$T$143, DW_AT_name("uintmax_t")
+    2178                    .dwattr $C$DW$T$143, DW_AT_type(*$C$DW$T$141)
+    2179                    .dwattr $C$DW$T$143, DW_AT_language(DW_LANG_C)
+    2180                    .dwattr $C$DW$T$143, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    2181                    .dwattr $C$DW$T$143, DW_AT_decl_line(0x5c)
+    2182                    .dwattr $C$DW$T$143, DW_AT_decl_column(0x16)
+    2183            
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE   42
+
+    2184            $C$DW$T$144     .dwtag  DW_TAG_typedef
+    2185                    .dwattr $C$DW$T$144, DW_AT_name("uint64_t")
+    2186                    .dwattr $C$DW$T$144, DW_AT_type(*$C$DW$T$131)
+    2187                    .dwattr $C$DW$T$144, DW_AT_language(DW_LANG_C)
+    2188                    .dwattr $C$DW$T$144, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    2189                    .dwattr $C$DW$T$144, DW_AT_decl_line(0x4b)
+    2190                    .dwattr $C$DW$T$144, DW_AT_decl_column(0x15)
+    2191            
+    2192            $C$DW$T$16      .dwtag  DW_TAG_base_type
+    2193                    .dwattr $C$DW$T$16, DW_AT_encoding(DW_ATE_float)
+    2194                    .dwattr $C$DW$T$16, DW_AT_name("float")
+    2195                    .dwattr $C$DW$T$16, DW_AT_byte_size(0x04)
+    2196            
+    2197            $C$DW$T$145     .dwtag  DW_TAG_typedef
+    2198                    .dwattr $C$DW$T$145, DW_AT_name("__float_t")
+    2199                    .dwattr $C$DW$T$145, DW_AT_type(*$C$DW$T$16)
+    2200                    .dwattr $C$DW$T$145, DW_AT_language(DW_LANG_C)
+    2201                    .dwattr $C$DW$T$145, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    2202                    .dwattr $C$DW$T$145, DW_AT_decl_line(0x4d)
+    2203                    .dwattr $C$DW$T$145, DW_AT_decl_column(0x10)
+    2204            
+    2205            $C$DW$T$17      .dwtag  DW_TAG_base_type
+    2206                    .dwattr $C$DW$T$17, DW_AT_encoding(DW_ATE_float)
+    2207                    .dwattr $C$DW$T$17, DW_AT_name("double")
+    2208                    .dwattr $C$DW$T$17, DW_AT_byte_size(0x08)
+    2209            
+    2210            $C$DW$T$146     .dwtag  DW_TAG_typedef
+    2211                    .dwattr $C$DW$T$146, DW_AT_name("__double_t")
+    2212                    .dwattr $C$DW$T$146, DW_AT_type(*$C$DW$T$17)
+    2213                    .dwattr $C$DW$T$146, DW_AT_language(DW_LANG_C)
+    2214                    .dwattr $C$DW$T$146, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    2215                    .dwattr $C$DW$T$146, DW_AT_decl_line(0x4c)
+    2216                    .dwattr $C$DW$T$146, DW_AT_decl_column(0x11)
+    2217            
+    2218            $C$DW$T$18      .dwtag  DW_TAG_base_type
+    2219                    .dwattr $C$DW$T$18, DW_AT_encoding(DW_ATE_float)
+    2220                    .dwattr $C$DW$T$18, DW_AT_name("long double")
+    2221                    .dwattr $C$DW$T$18, DW_AT_byte_size(0x08)
+    2222            
+    2223            $C$DW$T$148     .dwtag  DW_TAG_pointer_type
+    2224                    .dwattr $C$DW$T$148, DW_AT_type(*$C$DW$T$6)
+    2225                    .dwattr $C$DW$T$148, DW_AT_address_class(0x10)
+    2226            
+    2227            $C$DW$T$149     .dwtag  DW_TAG_typedef
+    2228                    .dwattr $C$DW$T$149, DW_AT_name("__va_list")
+    2229                    .dwattr $C$DW$T$149, DW_AT_type(*$C$DW$T$148)
+    2230                    .dwattr $C$DW$T$149, DW_AT_language(DW_LANG_C)
+    2231                    .dwattr $C$DW$T$149, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    2232                    .dwattr $C$DW$T$149, DW_AT_decl_line(0x92)
+    2233                    .dwattr $C$DW$T$149, DW_AT_decl_column(0x0f)
+    2234            
+    2235            
+    2236            $C$DW$T$19      .dwtag  DW_TAG_structure_type
+    2237                    .dwattr $C$DW$T$19, DW_AT_name("__mq")
+    2238                    .dwattr $C$DW$T$19, DW_AT_declaration
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE   43
+
+    2239                    .dwattr $C$DW$T$19, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    2240                    .dwattr $C$DW$T$19, DW_AT_decl_line(0x4c)
+    2241                    .dwattr $C$DW$T$19, DW_AT_decl_column(0x10)
+    2242                    .dwendtag $C$DW$T$19
+    2243            
+    2244            $C$DW$T$150     .dwtag  DW_TAG_pointer_type
+    2245                    .dwattr $C$DW$T$150, DW_AT_type(*$C$DW$T$19)
+    2246                    .dwattr $C$DW$T$150, DW_AT_address_class(0x10)
+    2247            
+    2248            $C$DW$T$151     .dwtag  DW_TAG_typedef
+    2249                    .dwattr $C$DW$T$151, DW_AT_name("__mqd_t")
+    2250                    .dwattr $C$DW$T$151, DW_AT_type(*$C$DW$T$150)
+    2251                    .dwattr $C$DW$T$151, DW_AT_language(DW_LANG_C)
+    2252                    .dwattr $C$DW$T$151, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    2253                    .dwattr $C$DW$T$151, DW_AT_decl_line(0x4c)
+    2254                    .dwattr $C$DW$T$151, DW_AT_decl_column(0x16)
+    2255            
+    2256            
+    2257            $C$DW$T$20      .dwtag  DW_TAG_structure_type
+    2258                    .dwattr $C$DW$T$20, DW_AT_name("__timer")
+    2259                    .dwattr $C$DW$T$20, DW_AT_declaration
+    2260                    .dwattr $C$DW$T$20, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS
+    2261                    .dwattr $C$DW$T$20, DW_AT_decl_line(0x4b)
+    2262                    .dwattr $C$DW$T$20, DW_AT_decl_column(0x10)
+    2263                    .dwendtag $C$DW$T$20
+    2264            
+    2265            $C$DW$T$152     .dwtag  DW_TAG_pointer_type
+    2266                    .dwattr $C$DW$T$152, DW_AT_type(*$C$DW$T$20)
+    2267                    .dwattr $C$DW$T$152, DW_AT_address_class(0x10)
+    2268            
+    2269            $C$DW$T$153     .dwtag  DW_TAG_typedef
+    2270                    .dwattr $C$DW$T$153, DW_AT_name("__timer_t")
+    2271                    .dwattr $C$DW$T$153, DW_AT_type(*$C$DW$T$152)
+    2272                    .dwattr $C$DW$T$153, DW_AT_language(DW_LANG_C)
+    2273                    .dwattr $C$DW$T$153, DW_AT_decl_file("C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LT
+    2274                    .dwattr $C$DW$T$153, DW_AT_decl_line(0x4b)
+    2275                    .dwattr $C$DW$T$153, DW_AT_decl_column(0x19)
+    2276            
+    2277                    .dwattr $C$DW$CU, DW_AT_language(DW_LANG_C)
+    2278            
+    2279            ;***************************************************************
+    2280            ;* DWARF CIE ENTRIES                                           *
+    2281            ;***************************************************************
+    2282            
+    2283            $C$DW$CIE       .dwcie 16
+    2284                    .dwcfi  cfa_register, 1
+    2285                    .dwcfi  cfa_offset, 0
+    2286                    .dwcfi  same_value, 0
+    2287                    .dwcfi  same_value, 1
+    2288                    .dwcfi  same_value, 3
+    2289                    .dwcfi  same_value, 4
+    2290                    .dwcfi  same_value, 5
+    2291                    .dwcfi  same_value, 6
+    2292                    .dwcfi  same_value, 7
+    2293                    .dwcfi  same_value, 8
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE   44
+
+    2294                    .dwcfi  same_value, 9
+    2295                    .dwcfi  same_value, 10
+    2296                    .dwendentry
+    2297            
+    2298            ;***************************************************************
+    2299            ;* DWARF REGISTER MAP                                          *
+    2300            ;***************************************************************
+    2301            
+    2302            $C$DW$56        .dwtag  DW_TAG_TI_assign_register
+    2303                    .dwattr $C$DW$56, DW_AT_name("PC")
+    2304                    .dwattr $C$DW$56, DW_AT_location[DW_OP_reg0]
+    2305            
+    2306            $C$DW$57        .dwtag  DW_TAG_TI_assign_register
+    2307                    .dwattr $C$DW$57, DW_AT_name("SP")
+    2308                    .dwattr $C$DW$57, DW_AT_location[DW_OP_reg1]
+    2309            
+    2310            $C$DW$58        .dwtag  DW_TAG_TI_assign_register
+    2311                    .dwattr $C$DW$58, DW_AT_name("SR")
+    2312                    .dwattr $C$DW$58, DW_AT_location[DW_OP_reg2]
+    2313            
+    2314            $C$DW$59        .dwtag  DW_TAG_TI_assign_register
+    2315                    .dwattr $C$DW$59, DW_AT_name("CG")
+    2316                    .dwattr $C$DW$59, DW_AT_location[DW_OP_reg3]
+    2317            
+    2318            $C$DW$60        .dwtag  DW_TAG_TI_assign_register
+    2319                    .dwattr $C$DW$60, DW_AT_name("r4")
+    2320                    .dwattr $C$DW$60, DW_AT_location[DW_OP_reg4]
+    2321            
+    2322            $C$DW$61        .dwtag  DW_TAG_TI_assign_register
+    2323                    .dwattr $C$DW$61, DW_AT_name("r5")
+    2324                    .dwattr $C$DW$61, DW_AT_location[DW_OP_reg5]
+    2325            
+    2326            $C$DW$62        .dwtag  DW_TAG_TI_assign_register
+    2327                    .dwattr $C$DW$62, DW_AT_name("r6")
+    2328                    .dwattr $C$DW$62, DW_AT_location[DW_OP_reg6]
+    2329            
+    2330            $C$DW$63        .dwtag  DW_TAG_TI_assign_register
+    2331                    .dwattr $C$DW$63, DW_AT_name("r7")
+    2332                    .dwattr $C$DW$63, DW_AT_location[DW_OP_reg7]
+    2333            
+    2334            $C$DW$64        .dwtag  DW_TAG_TI_assign_register
+    2335                    .dwattr $C$DW$64, DW_AT_name("r8")
+    2336                    .dwattr $C$DW$64, DW_AT_location[DW_OP_reg8]
+    2337            
+    2338            $C$DW$65        .dwtag  DW_TAG_TI_assign_register
+    2339                    .dwattr $C$DW$65, DW_AT_name("r9")
+    2340                    .dwattr $C$DW$65, DW_AT_location[DW_OP_reg9]
+    2341            
+    2342            $C$DW$66        .dwtag  DW_TAG_TI_assign_register
+    2343                    .dwattr $C$DW$66, DW_AT_name("r10")
+    2344                    .dwattr $C$DW$66, DW_AT_location[DW_OP_reg10]
+    2345            
+    2346            $C$DW$67        .dwtag  DW_TAG_TI_assign_register
+    2347                    .dwattr $C$DW$67, DW_AT_name("r11")
+    2348                    .dwattr $C$DW$67, DW_AT_location[DW_OP_reg11]
+MSP430 Assembler PC v21.6.1 Wed Nov 30 16:35:39 2022
+
+Copyright (c) 2003-2018 Texas Instruments Incorporated
+pmm.asm                                                              PAGE   45
+
+    2349            
+    2350            $C$DW$68        .dwtag  DW_TAG_TI_assign_register
+    2351                    .dwattr $C$DW$68, DW_AT_name("r12")
+    2352                    .dwattr $C$DW$68, DW_AT_location[DW_OP_reg12]
+    2353            
+    2354            $C$DW$69        .dwtag  DW_TAG_TI_assign_register
+    2355                    .dwattr $C$DW$69, DW_AT_name("r13")
+    2356                    .dwattr $C$DW$69, DW_AT_location[DW_OP_reg13]
+    2357            
+    2358            $C$DW$70        .dwtag  DW_TAG_TI_assign_register
+    2359                    .dwattr $C$DW$70, DW_AT_name("r14")
+    2360                    .dwattr $C$DW$70, DW_AT_location[DW_OP_reg14]
+    2361            
+    2362            $C$DW$71        .dwtag  DW_TAG_TI_assign_register
+    2363                    .dwattr $C$DW$71, DW_AT_name("r15")
+    2364                    .dwattr $C$DW$71, DW_AT_location[DW_OP_reg15]
+    2365            
+    2366            $C$DW$72        .dwtag  DW_TAG_TI_assign_register
+    2367                    .dwattr $C$DW$72, DW_AT_name("CIE_RETA")
+    2368                    .dwattr $C$DW$72, DW_AT_location[DW_OP_reg16]
+    2369            
+    2370                    .dwendtag $C$DW$CU
+    2371            
+
+No Assembly Errors, No Assembly Warnings

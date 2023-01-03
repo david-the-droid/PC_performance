@@ -46,6 +46,8 @@ usart_comms.obj: C:/ccs_challengespace/MSP430_LCD_display/driverlib/MSP430FR2xx_
 usart_comms.obj: C:/ccs_challengespace/MSP430_LCD_display/driverlib/MSP430FR2xx_4xx/adc.h
 usart_comms.obj: C:/ccs_challengespace/MSP430_LCD_display/driverlib/MSP430FR2xx_4xx/crc.h
 usart_comms.obj: C:/ccs_challengespace/MSP430_LCD_display/driverlib/MSP430FR2xx_4xx/rtc.h
+usart_comms.obj: C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/stdio.h
+usart_comms.obj: C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/stdarg.h
 
 ../usart_comms.c:
 
@@ -138,4 +140,8 @@ C:/ccs_challengespace/MSP430_LCD_display/driverlib/MSP430FR2xx_4xx/adc.h:
 C:/ccs_challengespace/MSP430_LCD_display/driverlib/MSP430FR2xx_4xx/crc.h:
 
 C:/ccs_challengespace/MSP430_LCD_display/driverlib/MSP430FR2xx_4xx/rtc.h:
+
+C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/stdio.h:
+
+C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/stdarg.h:
 

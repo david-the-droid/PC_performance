@@ -12,10 +12,6 @@ C_SRCS += \
 ../main.c \
 ../usart_comms.c 
 
-C_DEPS += \
-./main.d \
-./usart_comms.d 
-
 OBJS += \
 ./main.obj \
 ./usart_comms.obj 
@@ -23,10 +19,6 @@ OBJS += \
 OBJS__QUOTED += \
 "main.obj" \
 "usart_comms.obj" 
-
-C_DEPS__QUOTED += \
-"main.d" \
-"usart_comms.d" 
 
 C_SRCS__QUOTED += \
 "../main.c" \

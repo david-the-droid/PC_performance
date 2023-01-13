@@ -31,8 +31,8 @@ jobs:
         pip install pandas
         pip install flake8 pytest
         pwd
-        mv /python_pc_app/tests/OpenHardwareMonitorLog-2022-09-17.csv .
-        mv /python_pc_app/tests/OpenHardwareMonitorLog-2022-09-17_new.csv .
+        mv python_pc_app/tests/OpenHardwareMonitorLog-2022-09-17.csv .
+        mv python_pc_app/tests/OpenHardwareMonitorLog-2022-09-17_new.csv .
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Lint with flake8
       run: |

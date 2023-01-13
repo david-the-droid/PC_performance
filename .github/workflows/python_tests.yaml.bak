@@ -30,8 +30,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install pandas
         pip install flake8 pytest
-        mv /python_pc_app/test/OpenHardwareMonitorLog-2022-09-17.csv .
-        mv /python_pc_app/test/OpenHardwareMonitorLog-2022-09-17_new.csv .
+        pwd
+        mv /home/runner/work/PC_performance/PC_performance/python_pc_app/test/OpenHardwareMonitorLog-2022-09-17.csv .
+        mv /home/runner/work/PC_performance/PC_performance/python_pc_app/test/OpenHardwareMonitorLog-2022-09-17_new.csv .
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Lint with flake8
       run: |
